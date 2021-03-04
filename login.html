@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	  <title>Hmiza Card</title>
+	  <link rel="stylesheet" href="css/font-awesome.min.css">
+	  <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+	  <link rel="stylesheet" href="css/bootstrap.css">
+	  <link rel="stylesheet" href="css/auth.css">
+     <link rel="stylesheet" href="css/animate.css">
+     <link rel='shortcut icon' type='image/x-icon' href="img/png-transparent-round-gold-frame-illustration-medal-logo-badge-golden-sparkle-badge-golden-frame-decorative-gold.png" />
+      <meta name="keyword" content="">
+    <meta name="discription" content="">
+    <meta name="author" content="">
+	</head>
+  
+<body id="home">
+
+<!-- 
+
+1. HEADER & MENU
+
+-->
+ 
+    <nav class="navbar navbar-expand-sm">
+    <div class="container">
+        <a href="index.html" class="navbar-brand">
+           <img src="img/logo hmiza-07.png" class="animate__animated animate__bounce">
+         </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto animate__animated animate__fadeInRight">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="register.html" class="nav-link">Register</a>
+          </li>
+         
+        </ul>
+      </div>
+    
+    </div>
+  </nav>
+
+<!-- 
+
+2. LPGIN FORM
+
+-->
+<div class="bg">
+<section class="login-area">
+  <div class="container">
+    <div class="row">
+     
+      <!-- Form -->
+      <div class="col-md-6 m-auto">
+        <div class="card bg-white text-center card-form mx-2 mb-4">
+          <div class="card-head">
+            <div class="icon">
+               <span class="fa fa-user pt-2" aria-hidden="true"></span>
+            </div>
+          </div>
+          <div class="card-body">
+           
+            <p>Votre Identifiant Pour Rejoindre <strong>Hmiza</strong></p>
+
+            <form action="{{ route ('login') }}" method="post">
+              <div class="form-group">
+                <input type="email" name="email" class="form-control is-valid" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <div class="pass">
+                  <input id="test-input" type="password" name="password" class="form-control" placeholder="Password">
+                  <i class="fa fa-eye" id="check"></i>
+                </div>
+                
+              </div>
+              <div class="form-group">
+                <input type="submit" name="login" class="add-to-cart" value="Login">
+              </div>
+              <div class="form-group">
+              	<div class="d-flex flex-row justify-content-between">
+              		<div class="align-items-start">
+              			<label class="contain">Garder ma session ouvert
+        						  <input type="checkbox" checked="checked">
+        						  <span class="checkmark"></span>
+        						</label>
+              		</div>
+              		<div class="align-items-end">
+              			<span>
+              				<a href="#" style="color: #333">Mot de pass oublié</a>
+              			</span>
+              		</div>
+              	</div>
+              </div>
+            </form>
+          </div>
+          <div class="card-footer">
+            <!-- Social Media Profiles Starts -->
+              <div class="social">
+                <h6 class="font-weight-700 uppercase">Social Profiles</h6>
+                  <ul class="list-unstyled center-align p-none">
+                      <li class="facebook d-inline"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li class="twitter d-inline"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                      <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+              </div>
+          <!-- Social Media Profiles Ends -->
+          </div>
+            
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+<!-- 
+
+3. FOOTER
+
+-->
+<footer id="main-footer">
+	<div class="container">
+	  <div class="row">
+	    <div class="col text-center">
+	      <div class="py-4">
+	       
+	          <img src="img/logo hmiza-07.png" style="width: 90px;" class="">
+
+	        <p class="pt-2">Copyright &copy; 2021</p>
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</footer>
+
+<!-- 
+
+4. SCRIPTS
+
+-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Hmiza Card</title>
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/about.css">
+
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel='shortcut icon' type='image/x-icon' href="img/png-transparent-round-gold-frame-illustration-medal-logo-badge-golden-sparkle-badge-golden-frame-decorative-gold.png" />
+		<meta name="keyword" content="">
+		<meta name="discription" content="">
+		<meta name="author" content="">
+	</head>
+
+<body onload="startTime()">
+
+<!-- 
+
+1. HEADER & MENU
+
+-->
+
+	<nav class="navbar navbar-expand-sm bg-dark navbar-brand fixed-top">
+		<div class="container">
+			<a href="index.html" class="navbar-brand">
+			<img src="img/logo hmiza-07.png" class="">
+			</a>
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+					<a href="index.html" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+					<a href="register.html" class="nav-link">Register</a>
+					</li>
+
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+
+	<div class="jumbotron">
+		<h1>Hmiza Card</h1>
+		<p>Super Company in the world</p>
+		<p id="txt" class="pull-right"></p>
+	</div>
+
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+			<li class="breadcrumb-item active" aria-current="page">About</li>
+		</ol>
+	</nav>
+
+<!-- 
+
+2. ABOUT PAGE START
+
+-->
+
+	<section id="about">
+		<div class="about-container">
+			<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+				<li class="nav-item">
+				<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">About</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Services</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" id="pills-why-tab" data-toggle="pill" href="#pills-why" role="tab" aria-controls="pills-why" aria-selected="false">Why us?</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+				</li>
+			</ul>
+			<div class="tab-content mt-4" id="pills-tabContent">
+				<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+					<div class="row animate__animated animate__zoomIn">
+						<div class="col-lg-6">
+						   <img src="img/pexels-scott-webb-27406.jpg" class="img-fluid img-thumbnail">
+						</div>
+						<div class="col-lg-6">
+						   <img src="img/pexels-michael-steinberg-342945.jpg" class="img-fluid img-thumbnail">
+						</div>
+					</div>
+					<div class="company-detail pt-3">
+						<h5>Introduction</h5>
+						<p class="text-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+						<p class="text-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<div class="d-flex flex-row justify-content-center py-4">
+							<div class="align-items-start mr-4">
+								<div class="d-flex flex-row">
+									<div class="align-items-start pr-2">
+									   <i class="fa fa-line-chart"></i>
+									</div>
+									<div class="align-items-end">
+									   <span>150</span>
+									    <p>Project Complet</p>
+									</div>
+								</div>
+							</div>
+							<div class="align-items-center ml-4">
+								<div class="d-flex flex-row">
+									<div class="align-items-start pr-2">
+									    <i class="fa fa-line-chart"></i>
+									</div>
+									<div class="align-items-end">
+									    <span>20</span>
+									    <p>
+									      Years of Experience</p>
+									</div>
+								</div>
+							</div>
+							<div class="align-items-end ml-4">
+								<div class="d-flex flex-row">
+									<div class="align-items-start pr-2">
+									   <i class="fa fa-line-chart"></i>
+									</div>
+									<div class="align-items-end">
+										<span>25</span>
+										<p>Awards Received</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="company-info">
+							<table class="table table-hover d-none d-lg-block">
+								<thead>
+								<tr>
+									<th scope="col">Id</th>
+									<th scope="col">Company Name</th>
+									<th scope="col">Address</th>
+									<th scope="col">Email</th>
+									<th scope="col">Site</th>
+									<th scope="col">Phone Number</th>
+									<th scope="col">Type of entreprise</th>
+								</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>Maroc Telecom</td>
+										<td>Casablanca</td>
+										<td>@maroc-telecom.com</td>
+										<td>https://www.iam.ma</td>
+										<td>0661 25 14 13</td>
+										<td>Ecomerce</td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>Inwi</td>
+										<td>Tanger</td>
+										<td>@inwi-telecom.com</td>
+										<td>https://www.inwi.ma</td>
+										<td>0661 00 14 13</td>
+										<td>Agricol</td>
+									</tr>
+									<tr>
+									<th scope="row">3</th>
+										<td>Wana</td>
+										<td>Agadir</td>
+										<td>@maroc-wana.com</td>
+										<td>https://www.wana.ma</td>
+										<td>0601 22 55 44</td>
+										<td>Touristique</td>
+									</tr>
+								</tbody>
+							</table>
+							<nav aria-label="Page navigation example" class=" d-none d-lg-block">
+								<ul class="pagination justify-content-center">
+									<li class="page-item disabled">
+									<a class="page-link" href="#" tabindex="-1">Previous</a>
+									</li>
+									<li class="page-item"><a class="page-link active" href="#">1</a></li>
+									<li class="page-item"><a class="page-link" href="#">2</a></li>
+									<li class="page-item"><a class="page-link" href="#">3</a></li>
+									<li class="page-item">
+									<a class="page-link" href="#">Next</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+					<div class="row animate__animated animate__slideInUp">
+						<div class="col-lg-4 mb-4">
+							<div class="card">
+								<div class="card-body">
+									<div class="d-flex flex-row">
+										<div class="align-items-start pt-5 pr-4">
+											<i class="fa fa-thumbs-o-up"></i>
+										</div>
+										<div class="align-items-end">
+											<span class="font-weight-bold">Business and Strategic Planning</span>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 mb-4">
+							<div class="card">
+								<div class="card-body">
+									<div class="d-flex flex-row">
+										<div class="align-items-start pt-5 pr-4">
+											<i class="fa fa-thumbs-o-up"></i>
+										</div>
+										<div class="align-items-end">
+											<span class="font-weight-bold">Financial Management and Projections </span>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 mb-4">
+							<div class="card">
+								<div class="card-body">
+									<div class="d-flex flex-row">
+										<div class="align-items-start pt-5 pr-4">
+											<i class="fa fa-thumbs-o-up"></i>
+										</div>
+										<div class="align-items-end">
+											<span class="font-weight-bold">Market Analysis and Research </span>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				   </div>
+					<div class="row animate__animated animate__slideInUp">
+						<div class="col-lg-4 mb-4">
+							<div class="card">
+								<div class="card-body">
+									<div class="d-flex flex-row">
+										<div class="align-items-start pt-5 pr-4">
+											<i class="fa fa-thumbs-o-up"></i>
+										</div>
+										<div class="align-items-end">
+											<span class="font-weight-bold">Tax Planning </span>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 mb-4">
+							<div class="card">
+								<div class="card-body">
+									<div class="d-flex flex-row">
+										<div class="align-items-start pt-5 pr-4">
+											<i class="fa fa-thumbs-o-up"></i>
+										</div>
+										<div class="align-items-end">
+											<span class="font-weight-bold">Retirement Planning </span>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+										</div>
+									</div>
+								</div>
+						    </div>
+					    </div>
+						<div class="col-lg-4 mb-4">
+							<div class="card">
+								<div class="card-body">
+									<div class="d-flex flex-row">
+										<div class="align-items-start pt-5 pr-4">
+											<i class="fa fa-thumbs-o-up"></i>
+										</div>
+										<div class="align-items-end">
+											<span class="font-weight-bold">Stocks and Bonds </span>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pills-why" role="tabpanel" aria-labelledby="pills-why-tab">
+					<div id="accordion" role="tablist" class="animate__animated animate__zoomIn">
+						<div class="card">
+							<div class="card-header" id="heading1">
+								<h6 class="mb-0">
+								<div href="#collapse1" data-toggle="collapse" data-parent="#accordion">
+								<i class="fa fa-arrow-circle-down pull-right"></i> Who We Are ?
+								</div>
+								</h6>
+							</div>
+							<div id="collapse1" class="collapse show">
+								<div class="card-body">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi pariatur optio totam obcaecati facere nam nihil inventore dolorum consequuntur quis unde voluptatibus numquam velit veniam explicabo eveniet fugit hic, tenetur. Iusto, consequatur, obcaecati. Ab earum alias, placeat exercitationem possimus quidem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem officia officiis aliquam fugiat, omnis, corrupti dolorum ipsa laudantium sequi dolores!
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="heading2">
+								<h6 class="mb-0">
+									<div href="#collapse2" data-toggle="collapse" data-parent="#accordion">
+									<i class="fa fa-arrow-circle-down pull-right"></i> Our Services
+									</div>
+								</h6>
+							</div>
+
+							<div id="collapse2" class="collapse">
+								<div class="card-body">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi pariatur optio totam obcaecati facere nam nihil inventore dolorum consequuntur quis unde voluptatibus numquam velit veniam explicabo eveniet fugit hic, tenetur. Iusto, consequatur, obcaecati. Ab earum alias, placeat exercitationem possimus quidem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem officia officiis aliquam fugiat, omnis, corrupti dolorum ipsa laudantium sequi dolores!
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header" id="heading3">
+								<h6 class="mb-0">
+									<div href="#collapse3" data-toggle="collapse" data-parent="#accordion">
+									<i class="fa fa-arrow-circle-down pull-right"></i> Our Profits
+									</div>
+								</h6>
+							</div>
+
+							<div id="collapse3" class="collapse">
+								<div class="card-body">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi pariatur optio totam obcaecati facere nam nihil inventore dolorum consequuntur quis unde voluptatibus numquam velit veniam explicabo eveniet fugit hic, tenetur. Iusto, consequatur, obcaecati. Ab earum alias, placeat exercitationem possimus quidem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem officia officiis aliquam fugiat, omnis, corrupti dolorum ipsa laudantium sequi dolores!
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+					<div class="row mt-5 contact animate__animated animate__zoomIn">
+						<div class="col-lg-8">
+						    <!-- start form -->
+							<form method="post">
+								<div class="form-group">
+									<div class="input-group input-group-lg">
+										<span class="input-group-addon"><i class="fa fa-user"></i></span>
+										<input type="text" name="full_name" class="form-control" placeholder="Name">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<div class="input-group input-group-lg">
+										<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+										<input type="email" name="email" class="form-control" placeholder="Email">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="d-flex flex-row align-items-center">
+										<div class="align-items-start pr-3">
+										   <span>Newsletter !</span>
+										</div>
+										<div class="align-items-end">
+											<input name="check_in" type="checkbox">
+											<span class="checkmark">yes please</span>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="input-group input-group-lg">
+										<span class="input-group-addon"><i class="fa fa-pencil"></i></span>
+										<textarea class="form-control" placeholder="Message" rows="5"></textarea>
+									</div>
+								</div>
+							    <input type="submit" value="Submit" class="btn btn-ghost btn-block btn-lg">
+							</form>
+						</div>
+						<div class="col-lg-3 align-self-center">
+							<div class="address">
+								<!-- Contacts Starts -->
+								<h6 class="font-weight-700 uppercase">Phone</h6>
+								<span class="font-weight-400 second-font"><i class="fa fa-phone"></i> +212 61 11 84 01</span>
+								<h6 class="font-weight-700 uppercase">Email</h6>
+								<span class="font-weight-400 second-font"><i class="fa fa-envelope"></i> @email.com</span>
+
+								<h6 class="font-weight-700 uppercase">Address</h6>
+								<span class="font-weight-400 second-font"><i class="fa fa-home"></i>  Morocco, Tanger</span><br>
+								<!-- Contacts Ends -->
+								<!-- Social Media Profiles Starts -->
+								<h6 class="font-weight-700 uppercase">Social Profiles</h6>
+								<div class="social">
+									<ul class="list-inline social social-intro center-align p-none">
+										<li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+										<li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+								<!-- Social Media Profiles Ends -->
+							</div>      
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- 
+
+3. FOOTER START
+
+-->
+	<footer id="main-footer" class="bg-dark">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<div class="py-4">
+						<img src="img/logo hmiza-07.png" style="width: 90px;" class="">
+						<p class="pt-2">Copyright &copy; 2021</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+ <!-- 
+
+ SCROLL TO TOP START
+
+-->  
+
+<div id="scroll-top">
+   <div id="scroll" style="display: block;"></div>
+</div>
+
+ <!-- 
+
+  END SCROLL TO TOP
+
+-->  
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/custom.js"></script>
+
+</body>
+</html>

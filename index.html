@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	  <title>Hmiza Card</title>
+	  <link rel="stylesheet" href="css/font-awesome.min.css">
+	  <link rel="preconnect" href="https://fonts.gstatic.com">
+	  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+	  <link rel="stylesheet" href="css/bootstrap.css">
+	  <link rel="stylesheet" href="css/style.css">
+	  <link rel="stylesheet" href="css/animate.css">
+	  <meta name="keyword" content="">
+	  <meta name="discription" content="">
+	  <meta name="author" content="">
+	  <link rel='shortcut icon' type='image/x-icon' href="img/png-transparent-round-gold-frame-illustration-medal-logo-badge-golden-sparkle-badge-golden-frame-decorative-gold.png" />
+
+
+	</head>
+<body id="home">
+
+<!-- 
+
+ 1. HEADER & MENU START
+
+-->
+
+	<header>
+
+	    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+	    <div class="container">
+	        <a href="index.html" class="navbar-brand">
+	           <img src="img/logo hmiza-07.png" class="logo animate__animated animate__bounce">
+	         </a>
+	      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+	        <span class="navbar-toggler-icon"></span>
+	      </button>
+	      <div class="collapse navbar-collapse" id="navbarCollapse">
+	        <ul class="navbar-nav ml-auto animate__animated animate__fadeInRight">
+	           
+	          <li class="nav-item">
+	            <a href="#services" class="nav-link">Services</a>
+	          </li>
+	          <li class="nav-item">
+	            <a href="about.html" class="nav-link">About</a>
+	          </li>
+	          <li class="nav-item">
+	            <a href="#testmonial" class="nav-link">Testmonial</a>
+	          </li>
+	          <li class="nav-item">
+	            <a href="#contact" class="nav-link">Contact</a>
+	          </li>
+
+	          <li class="nav-item">
+	            <a href="#" class="nav-link d-none d-lg-block">|</a>
+	          </li>
+	          <li class="nav-item">
+	            <a href="register.html" class="nav-link">Register</a>
+	          </li>
+	          <li class="nav-item">
+	            <a href="login.html" class="nav-link">Login</a>
+	          </li>
+            <!-- Search icon start -->
+            <li class="nav-item">
+              <a href="#" class="nav-link"  id="search">
+                <i class="fa fa-search"></i>
+              </a>
+            </li>
+            <!-- Search icon end -->            
+	        </ul>
+
+	      </div>
+         <!-- Search Functionality start -->
+	    <div id="search-box" class="animate__animated animate__zoomIn" style="display: none;">
+          <div id="close-btn">
+            <span class="fa fa-times"></span>
+          </div>
+          <form action="{{ route('search') }}" method="post">
+          <div class="search-data">
+            <input type="text" name="search" placeholder="Search" autocomplete="off" required>
+            <button type="submit" name="search">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+          </form>
+      </div>
+      <!-- Search Functionality end -->
+	    </div>
+	  </nav>
+	</header>
+
+<!-- 
+
+  END HEADER & MENU 
+
+-->
+
+<!-- 
+
+ 2. SHOWCASE SLIDEER START
+
+-->
+<div class="bg">
+  <section id="showcase" class="pb-4">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+      	
+        <div class="carousel-item carousel-image-1 active">
+        	<span class="hmiza">Hmiza</span>
+          <div class="container">
+            <div class="carousel-caption d-none d-lg-block text-left mb-5">
+              <h1>Hello <strong style="color:#D3C28D;">Hmiza Card.</strong><br> supper data entry services
+              </h1>
+		          <a href="#" class="btn btn-ghost text-uppercase">sign in</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel-image-2">
+          <span class="hmiza">Hmiza</span>
+          <div class="container">
+            <div class="carousel-caption d-none d-lg-block text-left mb-5">
+              <h1>Hello <strong style="color:#D3C28D;">Hmiza Card.</strong><br> supper data entry services
+              </h1>
+              <a href="#" class="btn btn-ghost text-uppercase">sign in</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel-image-3">
+          <span class="hmiza">Hmiza</span>
+          <div class="container">
+            <div class="carousel-caption d-none d-lg-block text-left mb-5">
+              <h1>Hello <strong style="color:#D3C28D;">Hmiza Card.</strong><br> supper data entry services
+              </h1>
+              <a href="#" class="btn btn-ghost text-uppercase">sign in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- 
+
+ END SHOWCASE SLIDEER
+
+-->
+
+ <!-- 
+
+ 3. SERVICES SECTION START
+
+-->
+   <div class="bg">
+	  <section id="services" class="pt-4">
+	    <div class="container">
+	    	<!-- <div class="widget-title">
+			    <h3>Sticky Ad</h3>
+		    </div> -->
+		    <div class="text-center">
+	     <div class="title">
+	     	<h2>Solutions to Help Businesses and Societies Flourish</h2>
+	     </div>
+	     <!-- <div class="text-style">
+	     	<p>Enhance your brand with easy-to-use powerful customization features. The time has come to bring those ideas and plans to life. This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
+	     	
+	     </div> -->
+	     <div class="counters">
+	     	<div class="line"></div>
+		     <section class="row">
+			       <div class="col-lg-4">	       	
+			       		<div class="counter" data-target="1000">0</div>
+						<h3 class="font-weight-bold">Custmors</h3>
+			       	</div>
+			       	<div class="col-lg-4">
+			       		<div class="counter" data-target="2000">0</div>
+						<h3 class="font-weight-bold">Financial transactions</h3>
+			       	</div>
+			       	<div class="col-lg-4 d-none d-lg-block">
+			       		<div class="counter" data-target="3000">0</div>
+						<h3 class="font-weight-bold">Subscribers</h3>
+			       	</div>
+			       	</div>	          
+			</section>
+	     </div>
+	    </div>
+	  </section>
+
+    </div>
+
+  <!-- BOXES -->
+  <section id="boxes" class="">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-lg-4">
+          <div class="card active-card text-center">
+            <div class="card-body">
+            	<div class="icon">
+            		<i class="fa fa-cloud mb-2"></i>
+            	</div>
+              <h3 class="">Sending Data</h3>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, quibusdam.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card text-center">
+            <div class="card-body">
+            	<div class="icon">
+            		<i class="fa fa-globe mb-2"></i>
+            	</div>
+              <h3 class="">Unlimited Support</h3>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, quibusdam.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card active-card text-center">
+
+            <div class="card-body">
+            	<div class="icon">
+            		<i class="fa fa-cart-plus mb-2"></i>
+            	</div>
+              <h3 class="">Making Moneyr</h3>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, quibusdam.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- 
+
+   END SERVICES SECTION
+
+ -->
+
+  <!-- 
+
+   4. ABOUT SECTION START
+
+  -->
+
+  <div id="about">
+  	<div class="container">
+	  	<div class="text-center">
+	  		<div class="title mt-4">
+		     	<h2>About Us</h2>
+		     </div>
+	  	</div>
+  	</div>
+  </div>
+
+   <div class="bg">
+	<!-- EXPLORE SECTION -->
+	  <section class="text-muted">
+	    <div class="container-area">
+	      <div class="row">
+	        <div class="col-md-6">
+	          <img src="img/pexels-christina-morillo-1181408.jpg" alt="" class="img-fluid pt-4">
+	        </div>
+	        <div class="col-md-6">
+	          <p class="text-style pt-4">Provides comprehensive global coverage of the private companies with in-depth profiles, hard-to-find details combined with robust screening capability. A deep relationship with the private equity community and exclusive relationships with the world’s leading venture capital associations provide the most comprehensive and reliable content for investigating private companies for potential deals or investments.</p>
+	          <div class="d-flex flex-row">
+	            <div class="p-4 align-self-start">
+	              <i class="fa fa-check"></i>
+	            </div>
+	            <div class="align-self-end text-style">
+	              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, architecto, quaerat. Quis cum eius itaque ipsa magni quam, illo molestias
+	            </div>
+	          </div>
+
+	          <div class="d-flex flex-row">
+	            <div class="p-4 align-self-start">
+	              <i class="fa fa-check"></i>
+	            </div>
+	            <div class="align-self-end text-style">
+	              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, architecto, quaerat. Quis cum eius itaque ipsa magni quam, illo molestias
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	      
+	    </div>
+	  </section>
+      <!-- COMPANY PHOTOS -->
+	  <div class="company-photos">
+	  	<div class="container">
+		  <div class="row">
+		      	<div class="col-md-3 d-none d-lg-block">
+		      		<img src="img/pexels-michael-steinberg-342945.jpg"class="img-fluid">
+		      	</div>
+		      	<div class="col-md-3 d-none d-lg-block">
+		      		<img data-toggle="modal" data-target="#contactModal" src="img/pexels-scott-webb-27406.jpg" style="width: 100%" class="img-fluid">
+		      	</div>
+		      	<div class="col-md-3 d-none d-lg-block">
+		      		<img src="img/pexels-pixabay-373584.jpg" style="width: 100%" class="img-fluid">
+		      	</div>
+		      	<div class="col-md-3 d-none d-lg-block">
+		      		<img src="img/pexels-lukas-684387.jpg" style="width: 100%" class="img-fluid">
+		      	</div>
+		    </div>
+	    </div>
+	</div>
+</div>
+
+ <!-- 
+
+   END ABOUT SECTION
+
+ -->
+
+  <!-- 
+
+   5. INFO SECTION START
+
+  -->
+
+<section id="info" class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+          <h3>Take Action</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae eaque quos eligendi, laboriosam. Culpa consequuntur illum facere id molestias.</p>
+          <a href="register.html" class="btn-line text-uppercase">Sign in</a>
+        </div>
+        <div class="col-md-6">
+          <img src="img/final-iMac.png" class="img-fluid" alt="">
+         <!--  <img src="img/index-iPhone 7.png" class="img-fluid"> -->
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- 
+
+   END INFO SECTION
+
+-->
+
+<!-- 
+
+   6. TAKE ACTION
+
+-->
+
+<section id="home-heading" class="p-5">
+    <div class="dark-overlay">
+      <div class="row">
+        <div class="col">
+          <div class="container pt-5">
+            <h1>Are You Ready To Get Started?</h1>
+            <p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita voluptates, consequatur labore placeat doloremque dignissimos exercitationem esse fuga laborum ex!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 
+
+   END TAKE ACTION 
+
+  -->
+
+  <!-- 
+
+   7. HOW TO USE SECTION START
+
+-->
+
+  <!-- SECTION STEPS -->
+    <section class="sections-steps pb-4">
+    	<div class="container">
+    		<div class="text-center">
+		  		<div class="title pt-5 mb-0">
+			     	<h2>How it works &mdash; Simple as 1, 2, 3</h2>
+			     </div>
+		  	</div>
+	        <div class="row">
+	            <div class="col-lg-4 col-md-6 col-sm-6">
+	                <img src="img/index-iPhone 7.png" class="img-fluid">
+	            </div>
+	            <div class="col-lg-8 col-md-6 col-sm-6">
+	                <div class="works-step align-items-center">
+	                      <div class="d-flex flex-row align-items-center">
+                   	<div class="align-self-start pr-4">
+                   		1
+                   	</div>
+                   	<div class="align-self-end">
+                   		<p>Spot global trends and opportunities with company data that covers 99% of the world’s market cap.</p>
+                   	</div>
+                   </div>
+                
+                <div class="d-flex flex-row align-items-center">
+                   	<div class="align-self-start pr-4">
+                   		2
+                   	</div>
+                   	<div class="align-self-end">
+                   		<p>You can research past events and anticipate future opportunities by accessing the oldest historical data sets and the largest coverage of companies.</p>
+                   	</div>
+                   </div>
+                <div class="d-flex flex-row align-items-center">
+                   	<div class="align-self-start pr-4">
+                   		3
+                   	</div>
+                   	<div class="align-self-end">
+                   		<p>Take action now </p>
+                   	</div>
+                   </div>
+	                 </div>
+	                <a href="#" class="btn-app"><img src="img/download-app.svg" alt="App Store Button"></a>
+	                <a href="#" class="btn-app"><img src="img/download-app-android.png" alt="Play Store Button"></a>
+	            </div>
+	        </div>
+        </div>
+    </section>
+
+  <!-- 
+
+   END HOW TO USE SECTION 
+
+  -->
+
+ <!-- 
+
+ 8. TESTEMONIAL START
+
+ -->
+
+  <section id="testmonial" class="my-5 text-center">
+    <div class="container">
+      <div class="text-center">
+	  		<div class="title mt-4">
+		     	<h2>Testmonials</h2>
+		     	<p class="customer-text" class="text-muted">Our dear customers said about us</p>
+		    </div>
+		</div>
+      <div class="row">
+        <div class="col-lg-4 col-sm-12">
+          <div class="card">
+            <div class="card-body">
+            	<i class="fa fa-quote-left"></i>
+              <img src="img/person1.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
+
+              <h3 class="text-muted">Susan Williams</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae molestiae alias expedita quae esse ut.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <div class="card">
+            <div class="card-body">
+            	<i class="fa fa-quote-left"></i>
+              <img src="img/person2.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
+              <h3 class="text-muted">Grace Smith</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae molestiae alias expedita quae esse ut.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <div class="card">
+            <div class="card-body">
+            	<i class="fa fa-quote-left"></i>
+              <img src="img/person3.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
+              <h3 class="text-muted">John Doe</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae molestiae alias expedita quae esse ut.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- 
+
+ END TESTEMONIAL
+
+-->
+
+ <!-- 
+
+ 9. CONTACT SECTION START
+
+-->
+<section id="contact" class="bg-light pt-5">
+    <div class="container-area">
+    	 <div class="text-center">
+		  		<div class="title mt-4">
+			     	<h2>Contact Us</h2>
+			    </div>
+		  	</div>
+	      <div class="row mt-5">
+	        <div class="col-lg-8">
+	           <!-- start form -->
+	          <form method="post">
+	            <div class="form-group">
+	              <div class="input-group input-group-lg">
+	                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+	                <input type="text" name="full_name" class="form-control" placeholder="Name">
+	              </div>
+	            </div>
+
+	            <div class="form-group">
+	              <div class="input-group input-group-lg">
+	                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+	                <input type="email" name="email" class="form-control" placeholder="Email">
+	              </div>
+	            </div>
+	            <div class="form-group">
+	            	<div class="d-flex flex-row align-items-center">
+	            		<div class="align-items-start pr-3">
+	            			<span>Newsletter !</span>
+	            		</div>
+	            		<div class="align-items-end">
+	            			<input name="check_in" type="checkbox">
+	        				<span class="checkmark">yes please</span>
+	            		</div>
+	            	</div>
+	            </div>
+	            <div class="form-group">
+	              <div class="input-group input-group-lg">
+	                <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
+	                <textarea class="form-control" placeholder="Message" rows="5"></textarea>
+	              </div>
+	            </div>
+	            <input type="submit" value="Submit" class="btn btn-ghost btn-block btn-lg">
+	          </form>
+	        </div>
+	        <div class="col-lg-3 align-self-center">
+	        	
+	        	<div class="address">
+					<!-- Contacts Starts -->
+	                <h6 class="font-weight-700 uppercase">Phone</h6>
+	                <span class="font-weight-400 second-font"><i class="fa fa-phone"></i> +212 61 11 84 01</span>
+					<h6 class="font-weight-700 uppercase">Email</h6>
+					<span class="font-weight-400 second-font"><i class="fa fa-envelope"></i> @email.com</span>
+				
+					<h6 class="font-weight-700 uppercase">Address</h6>
+					<span class="font-weight-400 second-font"><i class="fa fa-home"></i>  Morocco, Tanger</span><br>
+					<!-- Contacts Ends -->
+					<!-- Social Media Profiles Starts -->
+	                <h6 class="font-weight-700 uppercase">Social Profiles</h6>
+	                <div class="social">
+	                    <ul class="list-inline social social-intro center-align p-none">
+	                        <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+	                        <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+	                        <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+	                        <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+	                    </ul>
+	                </div>
+					<!-- Social Media Profiles Ends -->
+	            </div>      
+	        </div>
+	      </div>
+   
+    </div>
+  </section>
+ <!-- 
+
+  END CONTACT SECTION
+
+-->
+
+ <!-- 
+
+ 10. GOOGLE MAPS START
+
+-->
+<div class="overlay">  
+	<iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=tanger+(Hmiza)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="100%" style="border:0;opacity: 0.5"></iframe>
+</div>
+
+
+ <!-- 
+
+  END GOOGLE MAPS START
+
+-->
+
+ <!-- 
+
+  11. FOOTER SECTION START
+
+-->
+
+<footer id="main-footer" class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <div class="py-4">
+           
+              <img src="img/logo hmiza-07.png" style="width: 90px;" class="">
+   
+            <p class="pt-2">Copyright &copy; 2021</p>
+ 
+          </div>
+        </div>
+      </div>
+    </div>
+ </footer>
+
+ <!-- 
+
+  END FOOTER SECTION
+
+-->
+
+
+ <!-- 
+
+  12. SCROLL TO TOP START
+
+-->  
+
+<div id="scroll-top">
+   <div id="scroll" style="display: block;"></div>
+</div>
+
+ <!-- 
+
+  END SCROLL TO TOP
+
+-->  
+
+<!-- 
+
+ 13. SCRIPTS START
+
+-->
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/navbar-fixed.js"></script>
+  <script src="js/custom.js"></script>
+
+</body>
+</html>

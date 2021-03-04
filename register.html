@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hmiza Card</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+   <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel='shortcut icon' type='image/x-icon' href="img/png-transparent-round-gold-frame-illustration-medal-logo-badge-golden-sparkle-badge-golden-frame-decorative-gold.png" />
+     <meta name="keyword" content="">
+    <meta name="discription" content="">
+    <meta name="author" content="">
+  </head>
+  
+<body id="home">
+
+<!-- 
+
+1. HEADER & MENU
+
+-->
+
+   <nav class="navbar navbar-expand-sm">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="img/logo hmiza-07.png" class="animate__animated animate__bounce"">
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto animate__animated animate__fadeInRight">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="login.html" class="nav-link">Login</a>
+          </li>
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<!-- 
+
+2. REGISTER FORM
+
+-->
+
+<div class="bg">
+
+<section class="register-area">
+  <div class="container">
+    <div class="row">
+     
+      <!-- Form -->
+      <div class="col-md-8 m-auto">
+        <div class="card bg-white text-center card-form">
+          <div class="card-head">
+            <div class="icon">
+               <span class="fa fa-envelope-open pt-2" aria-hidden="true"></span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Créer un compte</h3>
+            <p>Si vous avez dejà un compte chez nous, veuillez vous connecter sur la page de connexion</p>
+
+            <form action="{{ route('register') }}" method="post">
+              <div class="row">
+                <div class="col-md-6 pr-2">
+                  <div class="form-group">
+                    <input type="text" name="firstname" class="form-control form-control-lg is-valid" placeholder="Prénom">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                   <div class="form-group">
+                    <input type="text" name="lastname" class="form-control form-control-lg" placeholder="Nom de famille">
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="form-group">
+                <input type="text" name="email" class="form-control form-control-lg is-valid" placeholder="Email">
+              </div> -->
+              <div class="row">
+                <div class="col-md-6 pr-2">
+                  <div class="form-group">
+                    <input type="email" name="email" class="form-control form-control-lg is-invalid" placeholder="Email">
+                  </div>
+                </div>
+                 <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" name="phone_number" class="form-control form-control-lg is-valid" placeholder="Téléphone">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="d-flex flex-row justify-content-center">
+                  <div class="align-items-start">
+                    <input type="file" name="payement_recue" id="file-upload" accept="img/*">
+                    <label for="file-upload" class="custom-file-upload">
+                      
+                      <i class="fa fa-cloud-upload pr-2"></i>
+                       Upload la carte national
+                    </label>
+                  </div>
+                  <div class="align-items-end">
+                    <input type="file" name="payement_recu" id="file-upload" accept="img/*">
+                    <label for="file-upload" class="custom-file-upload">
+                      
+                      <i class="fa fa-cloud-upload pr-2"></i>
+                       Upload reçu de paiement
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 pr-2">
+                   <div class="form-group custom-margin">
+                     <div class="pass">
+                      <input id="test-input" type="password" name="password" class="form-control" placeholder="Password">
+                      <i class="fa fa-eye" id="check"></i>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="col-md-6">
+                   <div class="form-group custom-margin">
+                    <input type="password" name="password_confirm" class="form-control form-control-lg is-invalid" placeholder="Confirmer mot de pass">
+                    <div class="invalid-feedback">
+                      Password does not match
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group custom-margin">
+                <input type="submit" name="register" class="add-to-cart" value="Register">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- 
+
+3. REGISTER FORM
+
+-->
+
+<!-- 
+
+4. FOOTER START
+
+-->
+
+  <footer id="main-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <div class="py-4">
+           
+              <img src="img/logo hmiza-07.png" style="width: 90px;" class="">
+   
+            <p class="pt-2">Copyright &copy; 2021</p>
+ 
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+<!-- 
+
+5. SCRIPTS
+
+-->
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  
+
+
+</body>
+</html>
