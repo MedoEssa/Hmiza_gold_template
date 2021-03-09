@@ -32,6 +32,9 @@ body {
   background: #FFFFFF;
   color: #1e1e27; 
 }
+ul {
+  list-style: none;
+}
 .form-control {
   background-color: #fff;
   border: 1px solid #b0a9a9;
@@ -107,6 +110,83 @@ padding: 0;
 .navbar-toggler {
    border: 1px solid  #D3C28D !important;
 }
+.navbar {
+  background-color: #521b1b !important;
+  opacity: 1.5;
+  border-bottom: 2px solid #d3c28d;
+}
+/*********************************
+        SEARCH START
+*********************************/
+
+#search-box {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../img/backround_Plan de travail 1.jpg');
+  background-size: cover;
+  position: fixed;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+#close-btn{
+  position: absolute;
+  z-index: 99;
+  right: 25px;
+  top: 25px;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+}
+.search-data{
+  position: absolute;
+  height: 50px;
+  border: 1px solid #d3c28d;
+  padding: 10px;
+  width: 59%;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2f2c18;
+
+}
+
+.search-data input[type="text"]{
+  border: none;
+  padding: 5px;
+  width: 95%;
+  display: inline-block;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: inherit;
+  color: #cacaca;
+  font-family: 'Montserrat', sans-serif;
+}
+.search-data input[type="text"]:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.search-data .fa-search {
+  color: #d3c28d;
+  font-size: 20px;
+  cursor: pointer;
+}
+div.search-data button {
+  position: absolute;
+  background: none;
+  border: none;
+  top: 12px;
+  right: 14px;
+}
+.fa-times {
+   color: #d3c28d;
+}
 
 /*********************************
 HEADER END
@@ -157,16 +237,16 @@ HEADER END
   color: #fff; 
 }
 
-.fa-facebook {
+.social .fa-facebook {
   background: #3b5998; 
 }
-.fa-twitter {
+.social .fa-twitter {
   background: #1da1f2; 
 }
-.fa-google-plus {
+.social .fa-google-plus {
   background: #dd4b39; 
 }
-.fa-linkedin {
+.social .fa-linkedin {
   background: #0077b5; 
 }
 
@@ -283,16 +363,103 @@ SCRLL TO TOP END
 *********************************/
 
 /*********************************
-3.FOOTER START
+FOOTER START
 *********************************/
-
+#main-footer {
+   background-color: #111;
+   margin-top: 80px;
+}
+#main-footer img {
+  width: 80px;
+}
 #main-footer p {
+   color: #eae8e8;
+}
+ul.footer-adress li a:before {
+  content: "\f068";
+  font-family: fontawesome;
+  margin-right: 10px;
+  font-size: 7px;
+  vertical-align: middle;
+  color: #D3C28D;
+}
+
+#main-footer h4 {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
   color: #fff;
 }
+#main-footer ul {
+  padding-left: 0px;
+  margin-top: 8px;
 
-#main-footer {
-  border-top: 3px solid #daa520;
 }
+.footer-nav {
+  display: flex;
+  justify-content: center;
+}
+.footer-nav a{
+  color: #999;
+  text-decoration: none;
+}
+ul.footer-nav  li {
+   padding-right: 12px;
+}
+
+#main-footer a {
+  color: #999;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+#main-footer ul li {
+   margin-bottom: 12px;
+}
+#main-footer span {
+   color: #999;
+}
+#main-footer li.social-media  {
+   margin-top: 5px;
+}
+#main-footer li.social-media a  {
+   margin: 5px 2px 5px 0;
+}
+#main-footer li.social-media a {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 30px;
+    color: #999;
+
+}
+#main-footer #facebook:hover {
+  background-color: #3b5998;
+}
+#main-footer #twitter:hover {
+  background-color: #1da1f2;
+}
+#main-footer #facebook:hover {
+  background-color: #3b5998;
+}
+#main-footer #google-plus:hover {
+  background-color: #dd4b39;
+}
+#main-footer #instagram:hover {
+  background-color: #0077b5;
+}
+#main-footer #pinterest:hover {
+  background-color: #c8232c;
+}
+#main-footer #youtube:hover {
+  background-color: #b2071d;
+}
+#main-footer #whatsapp:hover {
+  background-color: #25D366;
+}
+
 
 /*********************************
 FOOTER SND

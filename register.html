@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +12,7 @@
    <link rel="stylesheet" href="css/auth.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel='shortcut icon' type='image/x-icon' href="img/png-transparent-round-gold-frame-illustration-medal-logo-badge-golden-sparkle-badge-golden-frame-decorative-gold.png" />
+    <!-- Meta for SEO Optomize -->
      <meta name="keyword" content="">
     <meta name="discription" content="">
     <meta name="author" content="">
@@ -42,7 +42,6 @@
           <li class="nav-item">
             <a href="login.html" class="nav-link">Login</a>
           </li>
-         
         </ul>
       </div>
     </div>
@@ -70,79 +69,55 @@
           </div>
           <div class="card-body">
             <h3>Créer un compte</h3>
-            <p>Si vous avez dejà un compte chez nous, veuillez vous connecter sur la page de connexion</p>
-
-            <form action="{{ route('register') }}" method="post">
-              <div class="row">
-                <div class="col-md-6 pr-2">
-                  <div class="form-group">
-                    <input type="text" name="firstname" class="form-control form-control-lg is-valid" placeholder="Prénom">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                   <div class="form-group">
-                    <input type="text" name="lastname" class="form-control form-control-lg" placeholder="Nom de famille">
-                  </div>
-                </div>
+            <p>Créez votre profil de Membre Hmiza et accédez au meilleur des services, de l'inspiration et de la communauté HMIZA en avant-première.</p>
+            <!-- Start Form register -->
+            <form action="" method="post">
+              <div class="form-group">
+                <input type="text" name="firstname" class="form-control form-control-lg is-valid" placeholder="Prénom">
               </div>
-              <!-- <div class="form-group">
-                <input type="text" name="email" class="form-control form-control-lg is-valid" placeholder="Email">
-              </div> -->
-              <div class="row">
-                <div class="col-md-6 pr-2">
-                  <div class="form-group">
-                    <input type="email" name="email" class="form-control form-control-lg is-invalid" placeholder="Email">
-                  </div>
-                </div>
-                 <div class="col-md-6">
-                  <div class="form-group">
-                    <input type="text" name="phone_number" class="form-control form-control-lg is-valid" placeholder="Téléphone">
-                  </div>
+              <div class="form-group">
+                <input type="text" name="lastname" class="form-control form-control-lg" placeholder="Nom de famille">
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" class="form-control form-control-lg is-invalid" placeholder="Email">
+                <div class="invalid-feedback">
+                    Veuillez entrer une adresse e-mail valide.
                 </div>
               </div>
               <div class="form-group">
-                <div class="d-flex flex-row justify-content-center">
-                  <div class="align-items-start">
-                    <input type="file" name="payement_recue" id="file-upload" accept="img/*">
-                    <label for="file-upload" class="custom-file-upload">
-                      
-                      <i class="fa fa-cloud-upload pr-2"></i>
-                       Upload la carte national
-                    </label>
-                  </div>
-                  <div class="align-items-end">
-                    <input type="file" name="payement_recu" id="file-upload" accept="img/*">
-                    <label for="file-upload" class="custom-file-upload">
-                      
-                      <i class="fa fa-cloud-upload pr-2"></i>
-                       Upload reçu de paiement
-                    </label>
+                <input type="text" name="phone_number" class="form-control form-control-lg is-valid" placeholder="Téléphone">
+              </div>
+             
+              <div class="form-group">
+                  <input type="file" name="cart_national" class="custom-file-upload" id="cart_national">
+                <label for="cart_national" class="custom-file-upload">
+                    <i class="fa fa-cloud-upload pr-2"></i>
+                      Upload la carte national
+                </label>
+              </div>
+              <div class="form-group">
+                  <input type="file" name="recu_payment" class="custom-file-upload" id="recu_payment">
+                <label for="recu_payment" class="custom-file-upload">
+                    <i class="fa fa-cloud-upload pr-2"></i>
+                      Upload reçu de paiment
+                </label>
+              </div>
+               <div class="form-group">
+                  <input id="test-input" type="password" name="password" class="form-control is-valid" placeholder="Mot de pass">
+                  <!-- <i class="fa fa-eye" id="check"></i> -->
+               </div>
+                <div class="form-group">
+                  <input type="password" name="confirm_password" class="form-control is-invalid" placeholder="Confirmer Mot de pass">
+                  <div class="invalid-feedback">
+                    Ce mot de passe n'est pas conforme aux exigences minimales.
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6 pr-2">
-                   <div class="form-group custom-margin">
-                     <div class="pass">
-                      <input id="test-input" type="password" name="password" class="form-control" placeholder="Password">
-                      <i class="fa fa-eye" id="check"></i>
-                    </div>
-                    
-                  </div>
+                <div class="form-group">
+                  <input type="submit" value="REJOIGNEZ-NOUS" name="register" class="add-to-cart">
                 </div>
-                <div class="col-md-6">
-                   <div class="form-group custom-margin">
-                    <input type="password" name="password_confirm" class="form-control form-control-lg is-invalid" placeholder="Confirmer mot de pass">
-                    <div class="invalid-feedback">
-                      Password does not match
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group custom-margin">
-                <input type="submit" name="register" class="add-to-cart" value="Register">
-              </div>
             </form>
+            
+            <!--- End Form register -->
           </div>
         </div>
       </div>
@@ -163,22 +138,106 @@
 
 -->
 
-  <footer id="main-footer">
-    <div class="container">
+<footer id="main-footer" class="py-4">
+  <div class="container">
       <div class="row">
-        <div class="col text-center">
-          <div class="py-4">
-           
-              <img src="img/logo hmiza-07.png" style="width: 90px;" class="">
-   
-            <p class="pt-2">Copyright &copy; 2021</p>
- 
-          </div>
+        <div class="col-lg-4">
+          <ul class="footer-adress">
+            <li>
+            <h4>Company</h4>
+            </li>
+            <li>
+            <a href="about.html">About Us</a>
+            </li>
+            <li>
+            <a href="#">Contact Us</a>
+            </li>
+            <li>
+            <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+            <a href="#">Terms & Conditions</a>
+            </li>
+            <li>
+            <a href="#">Support Center</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <ul class="footer-adress">
+            <li>
+            <h4>Links</h4>
+            </li>
+            <li>
+            <a href="#">Link One</a>
+            </li>
+            <li>
+            <a href="#">Link Tow</a>
+            </li>
+            <li>
+            <a href="#">Link Three</a>
+            </li>
+            <li>
+            <a href="#">Link Four</a>
+            </li>
+            <li>
+            <a href="#">Link Five</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <ul>
+            <li>
+            <h4>Address</h4>
+            </li>
+            <li>
+            <span class="font-weight-400 second-font"><i class="fa fa-phone"></i> 06 99 46 31 49</span>
+            </li>
+            <li>
+            <span class="font-weight-400 second-font"><i class="fa fa-envelope"></i> Hmiza.Card@gmail.com</span>
+            </li>
+            <li class="social-media">
+            <a href="#" id="facebook">
+            <i class="fa fa-facebook"></i>
+            </a>
+            <a href="#" id="instagram">
+            <i class="fa fa-instagram"></i>
+            </a>
+            <a href="#" id="twitter">
+            <i class="fa fa-twitter"></i>
+            </a>
+            <a href="#" id="whatsapp">
+            <i class="fa fa-whatsapp"></i>
+            </a>
+            <a href="#" id="pinterest">
+            <i class="fa fa-pinterest"></i>
+            </a>
+
+            <a href="#" id="youtube">
+            <i class="fa fa-youtube"></i>
+            </a>
+            <a href="#" id="google-plus">
+            <i class="fa fa-google-plus"></i>
+            </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </footer>
-
+      <ul class="footer-nav text-center">
+      <li><a href="about.html">About us</a></li>
+      <li><a href="index.html">Blog</a></li>
+      <li><a href="#">Press</a></li>
+      <li><a href="#">iOs App</a></li>
+      <li><a href="#">Android App</a></li>
+      </ul>
+      <div class="row">
+        <div class="col text-center">
+          <img src="img/logo hmiza-07.png" style="width: 90px;" class="">
+          <p class="pt-2">Copyright © 2021</p>
+        </div>
+      </div>
+  </div>
+</footer>
 
 
 <!-- 
@@ -191,7 +250,5 @@
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   
-
-
 </body>
 </html>
