@@ -189,6 +189,7 @@ header {
 .navbar {
   background-color: #521b1b !important;
   opacity: 1.5;
+  border-bottom: 2px solid #d3c28d;
 }
 
 .navbar .nav-link {
