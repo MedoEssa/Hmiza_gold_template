@@ -119,7 +119,7 @@ padding: 0;
         SEARCH START
 *********************************/
 
-#search-box {
+#search-box, .redirect-error {
   width: 100%;
   height: 100vh;
   background-image: url('../img/backround_Plan de travail 1.jpg');
@@ -207,7 +207,7 @@ HEADER END
    padding: 0 15px 40px;
 }
 
-.contact h6 {
+.contact h6,.address h6  {
   margin: 12px 0;
   font-size: 20px;
   color: #daa520;
@@ -221,12 +221,9 @@ HEADER END
   font-size: 16px;
   border: 1px solid #ddd;
 }
-
 .address ul li {
    display: inline-block;
 }
-
-
 .address li .fa {
   width: 35px;
   height: 35px;
@@ -316,7 +313,7 @@ padding: 15px;
    color: #222 !important;
 }
 .pagination .active {
-  background-color: #0aa4e3;
+  background-color: #B8A562;
   color: #fff !important;
 }
 .page-link:focus {
@@ -459,8 +456,13 @@ ul.footer-nav  li {
 #main-footer #whatsapp:hover {
   background-color: #25D366;
 }
-
-
+.search-result .card-header {
+  padding: 0 !important;
+}
+.search-result .card {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
 /*********************************
 FOOTER SND
 *********************************/
@@ -473,4 +475,30 @@ FOOTER SND
     margin-top: 1em !important; 
 }
 
+}
+.redirect-error h5 {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:  #B8A562;
+  font-size: 45px;
+  font-weight: 700;
+}
+.redirect-error a {
+  font-size: 17px;
+  font-weight: 0;
+  color:  #fff;
+}
+.brand-title a{
+    font-weight: 700;
+    font-size: 20px;
+    color: #222;
+    text-decoration: none;
+    width: 60%;
+    transition: 0.3s all ease;
+}
+.brand-title a:hover {
+  color: #B8A562;
 }

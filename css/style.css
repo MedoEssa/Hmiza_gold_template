@@ -101,7 +101,7 @@ ul {
   list-style: none;
 }
 a{
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .title h2 {
@@ -393,7 +393,7 @@ ABOUT START
 *********************************/
 
 #about {
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 .fa-check {
@@ -813,7 +813,6 @@ ul.footer-nav  li {
   background-color: #25D366;
 }
 
-
 @media (max-width: 768px) { 
 
 .carousel-item  {
@@ -827,4 +826,49 @@ ul.footer-nav  li {
   margin-top: 20px;
   font-weight: 700;
   letter-spacing: 1px;
+}
+.brand-title a{
+    font-weight: 700;
+    font-size: 20px;
+    color: #222;
+    text-decoration: none;
+    width: 60%;
+    transition: 0.3s all ease;
+}
+.brand-title a:hover {
+  color: #B8A562;
+}
+
+.badge  {
+    color: #fff;
+    background-color: #B8A562;
+}
+
+.category-title {
+  font-size: 15px;
+    font-weight: 700;
+}
+.list-group-item a {
+  color: #222;
+  font-size: 17px;
+  font-weight: 400;
+
+}
+.page {
+  width: 700px;
+  margin: 20px auto;
+}
+.tab-content {
+  border-right: 1px solid #eee;
+}
+.input-group-text {
+  cursor: pointer;
+}
+
+.pagination .active {
+  background-color: #B8A562;
+  color: #fff !important;
+}
+.page-link {
+    color: #222 !important;
 }

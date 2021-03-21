@@ -7,12 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hmiza Card</title>
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel='shortcut icon' type='image/x-icon' href="img/png-transparent-round-gold-frame-illustration-medal-logo-badge-golden-sparkle-badge-golden-frame-decorative-gold.png" />
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://rawgit.com/vitmalina/w2ui/master/dist/w2ui.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="http://rawgit.com/vitmalina/w2ui/master/dist/w2ui.min.css" />
     <!-- Meta for SEO Optomize -->
     <meta name="keyword" content="">
     <meta name="discription" content="">
@@ -25,9 +29,7 @@
  1. HEADER & MENU START
 
 -->
-
   <header>
-
       <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
       <div class="container">
           <a href="index.html" class="navbar-brand">
@@ -38,10 +40,6 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ml-auto animate__animated animate__fadeInRight">
-             
-            <li class="nav-item">
-              <a href="#services" class="nav-link">Services</a>
-            </li>
             <li class="nav-item">
               <a href="about.html" class="nav-link">About</a>
             </li>
@@ -76,9 +74,9 @@
           <div id="close-btn">
             <span class="fa fa-times"></span>
           </div>
-          <form action="{{ route('search') }}" method="post">
+          <form action="{{ route('categories') }}" method="post">
           <div class="search-data">
-            <input type="text" name="search" placeholder="Search..." autocomplete="off" required>
+            <input type="text" name="search" placeholder="Search By Category" autocomplete="off" required>
             <button type="submit" name="search_data">
               <i class="fa fa-search"></i>
             </button>
@@ -101,8 +99,6 @@
 
 -->
 
-
-
   <section id="showcase" class="">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -111,129 +107,25 @@
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
-        
         <div class="carousel-item carousel-image-1 active">
-          <!-- <span class="hmiza">Hmiza</span> -->
           <img src="img/damark slider.jpg" class="img-fluid img-responsive" alt="...">
-         
         </div>
-
         <div class="carousel-item carousel-image-2">
           <img src="img/damark slider.jpg" class="img-fluid img-responsive" alt="...">
-          
         </div>
-
         <div class="carousel-item carousel-image-3">
            <img src="img/damark slider.jpg" class="img-fluid img-responsive" alt="...">
-          
         </div>
-
       </div>
     </div>
   </section>
-
 
 <!-- 
 
  END SHOWCASE SLIDEER
 
 -->
-
- <!-- 
-
- 3. SERVICES SECTION START
-
--->
-
-  <div id="services" class="pt-4">
-    <div class="container">
-      <div class="text-center">
-        <div class="title mt-4">
-          <h2 style="color: #555">Services</h2>
-         </div>
-      </div>
-    </div>
-  </div>
-
-   <div class="bg">
-    <section class="services pt-4">
-      <div class="container">
-        <div class="text-center">
-       <div class="title">
-        <h3>Solutions to Help Businesses and Societies Flourish</h3>
-       </div>
-       <div class="counters">
-        <div class="line"></div>
-         <section class="row">
-             <div class="col-lg-4">         
-                <div class="counter" data-target="1000">0</div>
-            <h3 class="font-weight-bold">Custmors</h3>
-              </div>
-              <div class="col-lg-4">
-                <div class="counter" data-target="2000">0</div>
-            <h3 class="font-weight-bold">Financial transactions</h3>
-              </div>
-              <div class="col-lg-4 d-none d-lg-block">
-                <div class="counter" data-target="3000">0</div>
-            <h3 class="font-weight-bold">Subscribers</h3>
-              </div>
-              </div>            
-      </section>
-       </div>
-      </div>
-    </section>
-
-    </div>
-
-  <!-- BOXES -->
-  <section id="boxes" class="">
-    <div class="container">
-      <div class="row">
-        
-        <div class="col-lg-4">
-          <div class="card active-card text-center">
-            <div class="card-body">
-              <div class="icon">
-                <i class="fa fa-cloud mb-2"></i>
-              </div>
-              <h3 class="">Sending Data</h3>
-              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, quibusdam.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card text-center">
-            <div class="card-body">
-              <div class="icon">
-                <i class="fa fa-globe mb-2"></i>
-              </div>
-              <h3 class="">Unlimited Support</h3>
-              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, quibusdam.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card active-card text-center">
-
-            <div class="card-body">
-              <div class="icon">
-                <i class="fa fa-cart-plus mb-2"></i>
-              </div>
-              <h3 class="">Making Moneyr</h3>
-              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, quibusdam.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
- <!-- 
-
-   END SERVICES SECTION
-
- -->
-
+ 
   <!-- 
 
    4. ABOUT SECTION START
@@ -268,7 +160,6 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, architecto, quaerat. Quis cum eius itaque ipsa magni quam, illo molestias
               </div>
             </div>
-
             <div class="d-flex flex-row">
               <div class="p-4 align-self-start">
                 <i class="fa fa-check"></i>
@@ -279,13 +170,12 @@
             </div>
           </div>
         </div>
-        
       </div>
     </section>
-      <!-- COMPANY PHOTOS -->
+    <!-- COMPANY PHOTOS -->
     <div class="company-photos">
       <div class="container">
-      <div class="row">
+        <div class="row">
             <div class="col-md-3 d-none d-lg-block">
               <img src="img/pexels-michael-steinberg-342945.jpg"class="img-fluid">
             </div>
@@ -298,9 +188,10 @@
             <div class="col-md-3 d-none d-lg-block">
               <img src="img/pexels-lukas-684387.jpg" style="width: 100%" class="img-fluid">
             </div>
-        </div>
+          </div>
       </div>
   </div>
+    
 </div>
 
  <!-- 
@@ -308,6 +199,275 @@
    END ABOUT SECTION
 
  -->
+
+ <!-- 
+   6. Categories 
+
+  -->
+
+<section id="about" class="mb-5">
+  <div class="container-area">
+    <div class="text-center">
+      <div class="title mt-4">
+      <h2>Entreprise Info</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-9">
+        <div class="tab-content" id="v-pills-tabContent">
+          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 mb-4">
+                 <img src="img/pexels-valeria-boltneva-1484516.jpg" class="img-fluid img-thumbnail">
+              </div>
+              <div class="col-sm-6">
+                <div class="brand-title">
+                <h3><a href="category.html">Café Almahaba</a></h3>
+                </div>
+                <div class="desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt 
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt </p>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 mb-4">
+                 <img src="img/pexels-mateusz-dach-3660229.jpg" class="img-fluid img-thumbnail">
+              </div>
+              <div class="col-sm-12 col-md-6 mb-4">
+              
+                <div class="brand-title">
+                   <h3><a href="category.html">Café Pardis</a></h3>
+                </div>
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt 
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt </p>
+                </div>
+              </div>
+               <!-- Pagination -->
+              <nav aria-label="Page navigation example" class="page">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="v-pills-agriculture" role="tabpanel" aria-labelledby="v-pills-agriculture-tab">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 mb-4">
+                 <img src="img/pexels-gary-barnes-6231852.jpg" class="img-fluid img-thumbnail">
+              </div>
+              <div class="col-sm-12 col-md-6 mb-4">
+                <div class="brand-title">
+                   <h3><a href="category.html">Maroc green</a></h3>
+                </div>
+                <div class="desc">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt 
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt </p>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 mb-4">
+                 <img src="img/pexels-karolina-grabowska-4207908.jpg" class="img-fluid img-thumbnail">
+              </div>
+             <div class="col-sm-12 col-md-6 mb-4">
+                  <div class="brand-title">
+                     <h3><a href="category.html">Nature Food</a></h3>
+                  </div>
+                  <div class="desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt 
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="v-pills-education" role="tabpanel" aria-labelledby="v-pills-education-tab">
+            <div class="row">
+              <div class="col-lg-6 mb-4">
+                 <img src="img/pexels-olia-danilevich-5088008.jpg" class="img-fluid img-thumbnail">
+              </div>
+              <div class="col-lg-6">
+                <div class="brand-title">
+                   <h3><a href="category.html">I9ra Class</a></h3>
+                </div>
+                <div class="desc">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt 
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt </p>
+                </div>
+              </div>
+              <div class="col-sm-6 mb-4">
+                 <img src="img/pexels-julia-m-cameron-4144923.jpg" class="img-fluid img-thumbnail">
+              </div>
+              <div class="col-sm-6">
+                  <div class="brand-title">
+                     <h3><a href="category.html">Educ Fath</a></h3>
+                  </div>
+                  <div class="desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt 
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="v-pills-travel" role="tabpanel" aria-labelledby="v-pills-travel-tab">
+            <div class="row">
+              <div class="col-sm-6 mb-4">
+              <img src="img/pexels-mihis-alex-21014.jpg" class="img-fluid img-thumbnail">
+              </div>
+              <div class="col-sm-6">
+                <div class="brand-title">
+                   <h3><a href="category.html">Travel comfort</a></h3>
+                </div>
+                <div class="desc">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt 
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt </p>
+                </div>
+              </div>
+              <div class="col-sm-6 mb-4">
+              <img src="img/pexels-leah-kelley-3935702.jpg" class="img-fluid img-thumbnail">
+              </div>
+              <div class="col-sm-6">
+                <div class="brand-title">
+                   <h3><a href="category.html">Travel Salam</a></h3>
+                </div>
+                <div class="desc">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt 
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="v-pills-sport" role="tabpanel" aria-labelledby="v-pills-sport-tab">
+            <div class="row">
+              <div class="col-sm-6 mb-4">
+                 <img src="img/machines-91849_1280.jpg" class="img-fluid img-thumbnail">
+              </div>
+              <div class="col-sm-6">
+                <div class="brand-title">
+                   <h3><a href="category.html">Gym Clubic</a></h3>
+                </div>
+                <div class="desc">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt 
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt </p>
+                </div>
+              </div>
+              <div class="col-sm-6 mb-4">
+                 <img src="img/pexels-pixabay-274422.jpg" class="img-fluid img-thumbnail">
+              </div>
+              <div class="col-sm-6">
+                <div class="brand-title">
+                  <h3><a href="category.html">Football Clubic</a></h3>
+                </div>
+                <div class="desc">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt 
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="v-pills-artisan" role="tabpanel" aria-labelledby="v-pills-artisan-tab">
+            <div class="row">
+              <div class="col-sm-6 mb-4">
+                 <img src="img/pexels-suzy-hazelwood-1266139.jpg" class="img-fluid img-thumbnail">
+              </div>
+              <div class="col-sm-6">
+                <div class="brand-title">
+                   <h3><a href="category.html">Tradition artisan</a></h3>
+                </div>
+                <div class="desc">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt 
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt </p>
+                </div>
+              </div>
+              <div class="col-sm-6 mb-4">
+                 <img src="img/pexels-skylar-kang-6044460.jpg" class="img-fluid img-thumbnail">
+              </div>
+              <div class="col-sm-6">
+                <div class="brand-title">
+                  <h3><a href="category.html">Artisan OldNew</a></h3>
+                </div>
+                <div class="desc">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt 
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <form action="{{ route('search') }}">
+           <div class="input-group mb-4">
+            <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Search By City">
+            <div class="input-group-prepend">
+            <div class="input-group-text"><i class="fa fa-search"></i></div>
+            </div>
+          </div>
+        </form>
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <ul class="list-group">
+            <li class="list-group-item">
+               <h5>Categories</h5>
+            </li>
+            <li class="list-group-item">
+              <a id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Café Restaurant
+                <span class="badge badge-primary badge-pill">200</span></a>
+            </li>
+            <li class="list-group-item">
+              <a id="v-pills-agriculture-tab" data-toggle="pill" href="#v-pills-agriculture" role="tab" aria-controls="v-pills-agriculture" aria-selected="false">Agriculture
+              <span class="badge badge-primary badge-pill">14</span></a>
+            </li>
+            <li class="list-group-item">
+              <a id="v-pills-education-tab" data-toggle="pill" href="#v-pills-education" role="tab" aria-controls="v-pills-education" aria-selected="false">Education
+                <span class="badge badge-primary badge-pill">144</span></a>
+            </li>
+            <li class="list-group-item">
+              <a id="v-pills-travel-tab" data-toggle="pill" href="#v-pills-travel" role="tab" aria-controls="v-pills-travel" aria-selected="false">Travel
+                <span class="badge badge-primary badge-pill">1000</span></a>
+            </li>
+            <li class="list-group-item">
+              <a id="v-pills-artisan-tab" data-toggle="pill" href="#v-pills-artisan" role="tab" aria-controls="v-pills-artisan" aria-selected="false">Artisanal
+                <span class="badge badge-primary badge-pill">50</span></a>
+            </li>
+            <li class="list-group-item">
+              <a id="v-pills-sport-tab" data-toggle="pill" href="#v-pills-sport" role="tab" aria-controls="v-pills-sport" aria-selected="false">Sport
+                <span class="badge badge-primary badge-pill">100</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+  </div>
+
+  </div>
+</section>
+
+ 
+
 
   <!-- 
 
@@ -325,7 +485,6 @@
         </div>
         <div class="col-md-6">
           <img src="img/final-iMac.png" class="img-fluid" alt="">
-         <!--  <img src="img/index-iPhone 7.png" class="img-fluid"> -->
         </div>
       </div>
     </div>
@@ -697,11 +856,11 @@
   12. SCROLL TO TOP START
 
 -->  
-
+<!-- 
 <div id="scroll-top">
    <div id="scroll" style="display: block;"></div>
 </div>
-
+ -->
  <!-- 
 
   END SCROLL TO TOP
@@ -716,8 +875,10 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/navbar-fixed.js"></script>
+
   <script src="js/custom.js"></script>
+
+
 
 </body>
 </html>
