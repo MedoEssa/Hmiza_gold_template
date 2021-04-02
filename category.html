@@ -1,292 +1,253 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>Hmiza Card</title>
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="css/bootstrap.css">
-		<link rel="stylesheet" href="css/about.css">
-		<link rel="stylesheet" href="css/animate.css">
-		<link rel='shortcut icon' type='image/x-icon' href="img/png-transparent-round-gold-frame-illustration-medal-logo-badge-golden-sparkle-badge-golden-frame-decorative-gold.png" />
-		<!-- Meta for SEO Optomize -->
-		<meta name="keyword" content="">
-		<meta name="discription" content="">
-		<meta name="author" content="">
-	</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hmiza Card</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel='shortcut icon' type='image/x-icon' href="img/png-transparent-round-gold-frame-illustration-medal-logo-badge-golden-sparkle-badge-golden-frame-decorative-gold.png" />
+    <!-- Meta for SEO Optomize -->
+    <meta name="keyword" content="">
+    <meta name="discription" content="">
+    <meta name="author" content="">
+  </head>
 
 <body>
 
-<!-- 
-
-1. HEADER & MENU
-
--->
-
-	<header>
-	    <nav class="navbar navbar-expand-lg fixed-top">
-	    <div class="container">
-	        <a href="index.html" class="navbar-brand">
-	           <img src="img/logo hmiza-07.png" class="logo animate__animated animate__bounce">
-	         </a>
-	      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-	        <span class="navbar-toggler-icon"></span>
-	      </button>
-	      <div class="collapse navbar-collapse" id="navbarCollapse">
-	        <ul class="navbar-nav ml-auto animate__animated animate__fadeInRight">
-	          <li class="nav-item">
-	            <a href="index.html" class="nav-link">Home</a>
-	          </li>
-	          <li class="nav-item">
-	            <a href="register.html" class="nav-link">Register</a>
-	          </li>
-	            <!-- Search icon start -->
-	            <li class="nav-item">
-	              <a href="#" class="nav-link"  id="search">
-	                <i class="fa fa-search"></i>
-	              </a>
-	            </li>
-	            <!-- Search icon end -->            
-	        </ul>
-	      </div>
-         <!-- Search Functionality start -->
-	    <div id="search-box" class="animate__animated animate__zoomIn" style="display: none;">
-          <div id="close-btn">
-            <span class="fa fa-times"></span>
-          </div>
-          <form action="{{ route('categories') }}" method="post">
-          <div class="search-data">
-            <input type="text" name="search" placeholder="Search By Category" autocomplete="off" required>
-            <button type="submit" name="search_data">
-              <i class="fa fa-search"></i>
+<header>
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+      <div class="container">
+          <a href="index.html" class="navbar-brand">
+             <img src="img/logo hmiza-07.png" class="logo animate__animated animate__bounce">
+           </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto animate__animated animate__fadeInRight">
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="register.html" class="nav-link">Register</a>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link">Login</a>
+            </li>       
+          </ul>
+           <!-- Search Functionality start -->
+          <form class="form-inline my-lg-0 ml-lg-5">
+            <select class="search-input" type="search" placeholder="Search" aria-label="Search">
+              <option value="1">Café</option>
+              <option value="2">Restaurant</option>
+              <option value="3">Sport</option>
+            </select>
+            <button class="search-btn" type="submit">
+              <span>
+                <i class=" fa fa-search"></i>
+              </span>
             </button>
-          </div>
           </form>
+          <!-- Search Functionality end -->
+        </div>
       </div>
-      <!-- Search Functionality end -->
-	    </div>
-	  </nav>
-	</header>
+    </nav>
+  </header>
 
-	<div class="jumbotron">
-		<h1>Hmiza Card</h1>
-		<p>Super Company in the world</p>
-		
-	</div>
+<div class="jumbotron">
+    <h1>a</h1>
+    <p>B</p>
+</div>
 
-	<nav aria-label="breadcrumb">
-		<div class="container">
-			<ol class="breadcrumb">
-				<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-				<li class="breadcrumb-item" aria-current="page">
-          <a href="categories.html">
-            Café Restaurant
-          </a>
-        </li>
-        <li class="breadcrumb-item active" aria-current="page">Café Alamhaba</li>
-			</ol>
-		</div>
-	</nav>
+<nav aria-label="breadcrumb">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">About a</li>
+        </ol>
+    </div>
+</nav>
 
-<!-- 
+<!--
 
 2. ABOUT PAGE START
 
 -->
 
-<section class="" id="contact">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6">
-			<img src="img/pexels-valeria-boltneva-1484516.jpg" class="img-fluid img-thumbnail w-100 circle-rounded">
-			</div>
-			<div class="col-lg-6">
-				<div class="address">
-          <!-- Contacts Starts -->
-          <h6 class="font-weight-700 uppercase">Phone</h6>
-          <span class="font-weight-400 second-font"><i class="fa fa-phone"></i> 06 99 46 31 49</span>
-          <h6 class="font-weight-700 uppercase">Email</h6>
-          <span class="font-weight-400 second-font"><i class="fa fa-envelope"></i> Hmiza.Card@gmail.com</span>
-        
-          <h6 class="font-weight-700 uppercase">Address</h6>
-          <span class="font-weight-400 second-font"><i class="fa fa-home"></i>  Morocco, Tétouan</span><br>
-          <!-- Contacts Ends -->
-          <!-- Social Media Profiles Starts -->
-          <h6 class="font-weight-700 uppercase">Social Profiles</h6>
-          <div class="social">
-              <ul class="list-inline social social-intro center-align p-none">
-                  <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                  <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                  <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                  <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              </ul>
-          </div>
-          <!-- Social Media Profiles Ends -->
+<section id="about">
+    <div class="container">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                   aria-controls="pills-home" aria-selected="true">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                   aria-controls="pills-profile" aria-selected="false">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-why-tab" data-toggle="pill" href="#pills-why" role="tab"
+                   aria-controls="pills-why" aria-selected="false">Why us?</a>
+            </li>
+        </ul>
+        <div class="tab-content mt-4" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <div class="row animate__animated animate__zoomIn">
+                      <div class="col-lg-3">
+                        <img src="https://hmiza-card.com/storage/partners/kPvxskUH45MLrnneSJrVzxTLv20vN8HAlQwXTjEr.jpg" alt="Image of a" class="img-fluid img-thumbnail">
+                    </div>
+                     <div class="col-lg-3">
+                        <img src="https://hmiza-card.com/storage/partners/zCXHN7IVu1Oam45LDUidHgmasDIaOxjLtJpxhXNS.jpg" alt="Image of a" class="img-fluid img-thumbnail">
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="https://hmiza-card.com/storage/partners/sOK6VcnvWSc4TI1tTxVxdFRpDh5KuTGYyq2bn9wc.jpg" alt="Image of a" class="img-fluid img-thumbnail">
+                    </div>
+                  </div>
+
+                <div class="company-detail pt-3">
+                    <h2>Introduction</h2>
+                    <p class="text-font mt-3">B</p>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="row animate__animated animate__slideInUp">
+                       <div class="col-lg-4 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex flex-row">
+                                    <div class="align-items-start pt-5 pr-4">
+                                        <i class="fa fa-thumbs-o-up"></i>
+                                    </div>
+                                    <div class="align-items-end">
+                                        <span class="font-weight-bold">coffe</span>
+                                        <p>sdfqfqfq</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+              </div>
+            <div class="tab-pane fade" id="pills-why" role="tabpanel" aria-labelledby="pills-why-tab">
+                <div id="accordion" role="tablist" class="animate__animated animate__zoomIn accordion">
+                    <div class="card">
+                        <div class="card-header" id="heading1">
+                            <div class="h4" href="#collapse1" data-toggle="collapse" data-parent="#accordion">
+                                <i class="fa fa-arrow-circle-down pull-right"></i> Who We Are ?
+                            </div>
+                        </div>
+                        <div id="collapse1" class="collapse show" data-parent="#accordion">
+                            <div class="card-body">
+                                gsgsfvg
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading2">
+                            <div class="h4" href="#collapse2" data-toggle="collapse" data-parent="#accordion">
+                                <i class="fa fa-arrow-circle-down pull-right"></i> Our Services
+                            </div>
+                        </div>
+
+                        <div id="collapse2" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                sgsdf
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="heading3">
+                            <div class="h4" href="#collapse3" data-toggle="collapse" data-parent="#accordion">
+                                <i class="fa fa-arrow-circle-down pull-right"></i> Our Profits
+                            </div>
+                        </div>
+
+                        <div id="collapse3" class="collapse">
+                            <div class="card-body">
+                                sdfgs
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="company-info mt-4">
-				<table class="table table-hover d-none d-lg-block">
-					<thead>
-					<tr>
-						<th scope="col">Id</th>
-						<th scope="col">Company Name</th>
-						<th scope="col">Address</th>
-						<th scope="col">Email</th>
-						<th scope="col">Site</th>
-						<th scope="col">Phone Number</th>
-						<th scope="col">Type of entreprise</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th scope="row">1</th>
-							<td>Maroc Telecom</td>
-							<td>Casablanca</td>
-							<td>@maroc-telecom.com</td>
-							<td>https://www.iam.ma</td>
-							<td>0661 25 14 13</td>
-							<td>Ecomerce</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</div>
-	</div>
+    </div>
 </section>
 
+<footer id="main-footer" class="py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="col text-center">
+                    <img alt="Hmiza Card Logo" src="https://hmiza-card.com/img/logo hmiza-07.png" style="width: 90px;" class="">
+                    <p class="pt-2 currentYear"></p>
+                </div>
+            </div>
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <ul>
+                    <li>
+                        <h4>Address</h4>
+                    </li>
+                    <li>
+                        <span class="font-weight-400 second-font"><i class="fa fa-phone"></i> 0697430890 / 0615640483</span>
+                    </li>
+                    <li>
+                        <span class="font-weight-400 second-font"><i
+                                class="fa fa-envelope"></i> elbahjamohamed0@gmail.com</span>
+                    </li>
+                    <li class="social-media">
+                        <a href="https://www.facebook.com/elbahja0" id="facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#" id="instagram">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="https://www.twitter.com/elbahja0" id="twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="https://wa.me/212697430890" id="whatsapp">
+                            <i class="fa fa-whatsapp"></i>
+                        </a>
 
-<!-- 
+                        <a href="https://www.youtube.com" id="youtube">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/elbahja0" id="linkedin">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--
 
-3. FOOTER START
+SCROLL TO TOP START
 
 -->
-<footer id="main-footer" class="py-4">
-  <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <ul class="footer-adress">
-            <li>
-            <h4>Company</h4>
-            </li>
-            <li>
-            <a href="#">About Us</a>
-            </li>
-            <li>
-            <a href="#">Contact Us</a>
-            </li>
-            <li>
-            <a href="#">Privacy Policy</a>
-            </li>
-            <li>
-            <a href="#">Terms & Conditions</a>
-            </li>
-            <li>
-            <a href="#">Support Center</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-4">
-          <ul class="footer-adress">
-            <li>
-            <h4>Links</h4>
-            </li>
-            <li>
-            <a href="#">Link One</a>
-            </li>
-            <li>
-            <a href="#">Link Tow</a>
-            </li>
-            <li>
-            <a href="#">Link Three</a>
-            </li>
-            <li>
-            <a href="#">Link Four</a>
-            </li>
-            <li>
-            <a href="#">Link Five</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-4">
-          <ul>
-            <li>
-            <h4>Address</h4>
-            </li>
-            <li>
-            <span class="font-weight-400 second-font"><i class="fa fa-phone"></i> 06 99 46 31 49</span>
-            </li>
-            <li>
-            <span class="font-weight-400 second-font"><i class="fa fa-envelope"></i> Hmiza.Card@gmail.com</span>
-            </li>
-            <li class="social-media">
-            <a href="#" id="facebook">
-            <i class="fa fa-facebook"></i>
-            </a>
-            <a href="#" id="instagram">
-            <i class="fa fa-instagram"></i>
-            </a>
-            <a href="#" id="twitter">
-            <i class="fa fa-twitter"></i>
-            </a>
-            <a href="#" id="whatsapp">
-            <i class="fa fa-whatsapp"></i>
-            </a>
-            <a href="#" id="pinterest">
-            <i class="fa fa-pinterest"></i>
-            </a>
-
-            <a href="#" id="youtube">
-            <i class="fa fa-youtube"></i>
-            </a>
-            <a href="#" id="google-plus">
-            <i class="fa fa-google-plus"></i>
-            </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <ul class="footer-nav text-center">
-      <li><a href="#">About us</a></li>
-      <li><a href="index.html">Blog</a></li>
-      <li><a href="#">Press</a></li>
-      <li><a href="#">iOs App</a></li>
-      <li><a href="#">Android App</a></li>
-      </ul>
-      <div class="row">
-        <div class="col text-center">
-          <img src="img/logo hmiza-07.png" style="width: 90px;" class="">
-          <p class="pt-2">Copyright © 2021</p>
-        </div>
-      </div>
-  </div>
-</footer>
-
- <!-- 
-
- SCROLL TO TOP START
-
--->  
 
 <div id="scroll-top">
-   <div id="scroll" style="display: block;"></div>
+    <div id="scroll" style="display: block;"></div>
 </div>
 
- <!-- 
-
-  END SCROLL TO TOP
-
--->  
-
-	<script src="js/jquery.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/custom.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
 
 </body>
 </html>

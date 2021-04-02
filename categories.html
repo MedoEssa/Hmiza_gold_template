@@ -19,7 +19,7 @@
 		<meta name="author" content="">
 	</head>
 
-<body onload="startTime()">
+<body>
 
 <!-- 
 
@@ -28,49 +28,44 @@
 -->
 
 	<header>
-	    <nav class="navbar navbar-expand-lg fixed-top">
-	    <div class="container">
-	        <a href="index.html" class="navbar-brand">
-	           <img src="img/logo hmiza-07.png" class="logo animate__animated animate__bounce">
-	         </a>
-	      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-	        <span class="navbar-toggler-icon"></span>
-	      </button>
-	      <div class="collapse navbar-collapse" id="navbarCollapse">
-	        <ul class="navbar-nav ml-auto animate__animated animate__fadeInRight">
-	          <li class="nav-item">
-	            <a href="index.html" class="nav-link">Home</a>
-	          </li>
-	          <li class="nav-item">
-	            <a href="register.html" class="nav-link">Register</a>
-	          </li>
-	            <!-- Search icon start -->
-	            <li class="nav-item">
-	              <a href="#" class="nav-link"  id="search">
-	                <i class="fa fa-search"></i>
-	              </a>
-	            </li>
-	            <!-- Search icon end -->            
-	        </ul>
-	      </div>
-         <!-- Search Functionality start -->
-	    <div id="search-box" class="animate__animated animate__zoomIn" style="display: none;">
-          <div id="close-btn">
-            <span class="fa fa-times"></span>
-          </div>
-          <form action="{{ route('categories') }}" method="post">
-          <div class="search-data">
-            <input type="text" name="search" placeholder="Search By Category" autocomplete="off" required>
-            <button type="submit" name="search_data">
-              <i class="fa fa-search"></i>
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+      <div class="container">
+          <a href="index.html" class="navbar-brand">
+             <img src="img/logo hmiza-07.png" class="logo animate__animated animate__bounce">
+           </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto animate__animated animate__fadeInRight">
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="register.html" class="nav-link">Register</a>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link">Login</a>
+            </li>       
+          </ul>
+           <!-- Search Functionality start -->
+          <form class="form-inline my-lg-0 ml-lg-5">
+            <select class="search-input" type="search" placeholder="Search" aria-label="Search">
+              <option value="1">Café</option>
+              <option value="2">Restaurant</option>
+              <option value="3">Sport</option>
+            </select>
+            <button class="search-btn" type="submit">
+              <span>
+                <i class=" fa fa-search"></i>
+              </span>
             </button>
-          </div>
           </form>
+          <!-- Search Functionality end -->
+        </div>
       </div>
-      <!-- Search Functionality end -->
-	    </div>
-	  </nav>
-	</header>
+    </nav>
+  </header>
 
 	<div class="jumbotron">
 		<h1>Café Restaurant</h1>
@@ -204,104 +199,52 @@
 
 -->
 <footer id="main-footer" class="py-4">
-  <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <ul class="footer-adress">
-            <li>
-            <h4>Company</h4>
-            </li>
-            <li>
-            <a href="#">About Us</a>
-            </li>
-            <li>
-            <a href="#">Contact Us</a>
-            </li>
-            <li>
-            <a href="#">Privacy Policy</a>
-            </li>
-            <li>
-            <a href="#">Terms & Conditions</a>
-            </li>
-            <li>
-            <a href="#">Support Center</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-4">
-          <ul class="footer-adress">
-            <li>
-            <h4>Links</h4>
-            </li>
-            <li>
-            <a href="#">Link One</a>
-            </li>
-            <li>
-            <a href="#">Link Tow</a>
-            </li>
-            <li>
-            <a href="#">Link Three</a>
-            </li>
-            <li>
-            <a href="#">Link Four</a>
-            </li>
-            <li>
-            <a href="#">Link Five</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-4">
-          <ul>
-            <li>
-            <h4>Address</h4>
-            </li>
-            <li>
-            <span class="font-weight-400 second-font"><i class="fa fa-phone"></i> 06 99 46 31 49</span>
-            </li>
-            <li>
-            <span class="font-weight-400 second-font"><i class="fa fa-envelope"></i> Hmiza.Card@gmail.com</span>
-            </li>
-            <li class="social-media">
-            <a href="#" id="facebook">
-            <i class="fa fa-facebook"></i>
-            </a>
-            <a href="#" id="instagram">
-            <i class="fa fa-instagram"></i>
-            </a>
-            <a href="#" id="twitter">
-            <i class="fa fa-twitter"></i>
-            </a>
-            <a href="#" id="whatsapp">
-            <i class="fa fa-whatsapp"></i>
-            </a>
-            <a href="#" id="pinterest">
-            <i class="fa fa-pinterest"></i>
-            </a>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="col text-center">
+                    <img alt="Hmiza Card Logo" src="https://hmiza-card.com/img/logo hmiza-07.png" style="width: 90px;" class="">
+                    <p class="pt-2 currentYear"></p>
+                </div>
+            </div>
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <ul>
+                    <li>
+                        <h4>Address</h4>
+                    </li>
+                    <li>
+                        <span class="font-weight-400 second-font"><i class="fa fa-phone"></i> 0697430890 / 0615640483</span>
+                    </li>
+                    <li>
+                        <span class="font-weight-400 second-font"><i
+                                class="fa fa-envelope"></i> elbahjamohamed0@gmail.com</span>
+                    </li>
+                    <li class="social-media">
+                        <a href="https://www.facebook.com/elbahja0" id="facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#" id="instagram">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="https://www.twitter.com/elbahja0" id="twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="https://wa.me/212697430890" id="whatsapp">
+                            <i class="fa fa-whatsapp"></i>
+                        </a>
 
-            <a href="#" id="youtube">
-            <i class="fa fa-youtube"></i>
-            </a>
-            <a href="#" id="google-plus">
-            <i class="fa fa-google-plus"></i>
-            </a>
-            </li>
-          </ul>
+                        <a href="https://www.youtube.com" id="youtube">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/elbahja0" id="linkedin">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <ul class="footer-nav text-center">
-      <li><a href="#">About us</a></li>
-      <li><a href="index.html">Blog</a></li>
-      <li><a href="#">Press</a></li>
-      <li><a href="#">iOs App</a></li>
-      <li><a href="#">Android App</a></li>
-      </ul>
-      <div class="row">
-        <div class="col text-center">
-          <img src="img/logo hmiza-07.png" style="width: 90px;" class="">
-          <p class="pt-2">Copyright © 2021</p>
-        </div>
-      </div>
-  </div>
+    </div>
 </footer>
 
  <!-- 

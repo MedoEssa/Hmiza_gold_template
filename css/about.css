@@ -119,7 +119,7 @@ padding: 0;
         SEARCH START
 *********************************/
 
-#search-box, .redirect-error {
+.redirect-error {
   width: 100%;
   height: 100vh;
   background-image: url('../img/backround_Plan de travail 1.jpg');
@@ -131,63 +131,29 @@ padding: 0;
   transform: translate(-50%, -50%);
 
 }
-#close-btn{
-  position: absolute;
-  z-index: 99;
-  right: 25px;
-  top: 25px;
-  font-size: 25px;
-  color: #fff;
-  cursor: pointer;
+/*********************************
+        SEARCH START
+*********************************/
+
+.search-input {
+  color: #000;
+    background: #fff;
+    width: 250px;
+    height: 32px;
+    padding: 0 10px;
+    border: 1px solid #D3C28D;
+    font-size: 18px;
 }
-.search-data{
-  position: absolute;
-  height: 50px;
-  border: 1px solid #d3c28d;
-  padding: 10px;
-  width: 59%;
-  border-radius: 20px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #2f2c18;
+.search-btn {
+      background-color: #D3C28D;
+    height: 35px;
+        width: 44px;
 
 }
-
-.search-data input[type="text"]{
+.search-input:focus {
   border: none;
-  padding: 5px;
-  width: 95%;
-  display: inline-block;
-  text-align: left;
-  font-size: 15px;
-  font-weight: 500;
-  background-color: inherit;
-  color: #cacaca;
-  font-family: 'Montserrat', sans-serif;
-}
-.search-data input[type="text"]:focus {
   outline: none;
-  border: none;
-  box-shadow: none;
 }
-
-.search-data .fa-search {
-  color: #d3c28d;
-  font-size: 20px;
-  cursor: pointer;
-}
-div.search-data button {
-  position: absolute;
-  background: none;
-  border: none;
-  top: 12px;
-  right: 14px;
-}
-.fa-times {
-   color: #d3c28d;
-}
-
 /*********************************
 HEADER END
 *********************************/
@@ -220,6 +186,7 @@ HEADER END
   padding: 24px;
   font-size: 16px;
   border: 1px solid #ddd;
+  width: 280px;
 }
 .address ul li {
    display: inline-block;
@@ -260,6 +227,7 @@ padding: 15px;
   margin-bottom: 0 !important;
 }
 .breadcrumb {
+
    background-color: #fbfbfb;
 }
 .fa-line-chart{
@@ -501,4 +469,21 @@ FOOTER SND
 }
 .brand-title a:hover {
   color: #B8A562;
+}
+.input-group-addon {
+      display: flex;
+    align-items: center;
+    background: #e9ecef;
+    padding: 0 20px;
+}
+
+.fa-check {
+  background-color: #D3C28D;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px;
+}
+#dashed {
+  margin: 20px 0;
+  border: 1px solid #eee;
 }

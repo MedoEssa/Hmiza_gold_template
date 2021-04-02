@@ -44,46 +44,30 @@
               <a href="about.html" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a href="#testmonial" class="nav-link">Testmonial</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#" class="nav-link d-none d-lg-block">|</a>
+              <a href="contact.html" class="nav-link">Contact</a>
             </li>
             <li class="nav-item">
               <a href="register.html" class="nav-link">Register</a>
             </li>
             <li class="nav-item">
               <a href="login.html" class="nav-link">Login</a>
-            </li>
-            <!-- Search icon start -->
-            <li class="nav-item">
-              <a href="#" class="nav-link"  id="search">
-                <i class="fa fa-search"></i>
-              </a>
-            </li>
-            <!-- Search icon end -->            
+            </li>       
           </ul>
-
-        </div>
-         <!-- Search Functionality start -->
-      <div id="search-box" class="animate__animated animate__zoomIn" style="display: none;">
-          <div id="close-btn">
-            <span class="fa fa-times"></span>
-          </div>
-          <form action="{{ route('categories') }}" method="post">
-          <div class="search-data">
-            <input type="text" name="search" placeholder="Search By Category" autocomplete="off" required>
-            <button type="submit" name="search_data">
-              <i class="fa fa-search"></i>
+           <!-- Search Functionality start -->
+          <form class="form-inline my-lg-0 ml-lg-5">
+            <select class="search-input" type="search" placeholder="Search" aria-label="Search">
+              <option value="1">Café</option>
+              <option value="2">Restaurant</option>
+              <option value="3">Sport</option>
+            </select>
+            <button class="search-btn" type="submit">
+              <span>
+                <i class=" fa fa-search"></i>
+              </span>
             </button>
-          </div>
           </form>
-      </div>
-      <!-- Search Functionality end -->
+          <!-- Search Functionality end -->
+        </div>
       </div>
     </nav>
   </header>
@@ -126,82 +110,9 @@
 
 -->
  
-  <!-- 
+ <!--
 
-   4. ABOUT SECTION START
-
-  -->
-
-  <div id="about">
-    <div class="container">
-      <div class="text-center">
-        <div class="title mt-4">
-          <h2>About Us</h2>
-         </div>
-      </div>
-    </div>
-  </div>
-
-   <div class="bg">
-  <!-- EXPLORE SECTION -->
-    <section class="text-muted">
-      <div class="container-area">
-        <div class="row">
-          <div class="col-md-6">
-            <img src="img/pexels-christina-morillo-1181408.jpg" alt="" class="img-fluid pt-4">
-          </div>
-          <div class="col-md-6">
-            <p class="text-style pt-4">La carte HMIZA est une carte de rédaction à Tétouan et dans les régions à travers laquelle vous pouvez profiter des réductions intéressantes dans de nombreaux magasins, marques internationales, restaurants, shopping, santé et voyage.</p>
-            <div class="d-flex flex-row">
-              <div class="p-4 align-self-start">
-                <i class="fa fa-check"></i>
-              </div>
-              <div class="align-self-end text-style">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, architecto, quaerat. Quis cum eius itaque ipsa magni quam, illo molestias
-              </div>
-            </div>
-            <div class="d-flex flex-row">
-              <div class="p-4 align-self-start">
-                <i class="fa fa-check"></i>
-              </div>
-              <div class="align-self-end text-style">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, architecto, quaerat. Quis cum eius itaque ipsa magni quam, illo molestias
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- COMPANY PHOTOS -->
-    <div class="company-photos">
-      <div class="container">
-        <div class="row">
-            <div class="col-md-3 d-none d-lg-block">
-              <img src="img/pexels-michael-steinberg-342945.jpg"class="img-fluid">
-            </div>
-            <div class="col-md-3 d-none d-lg-block">
-              <img data-toggle="modal" data-target="#contactModal" src="img/pexels-scott-webb-27406.jpg" style="width: 100%" class="img-fluid">
-            </div>
-            <div class="col-md-3 d-none d-lg-block">
-              <img src="img/pexels-pixabay-373584.jpg" style="width: 100%" class="img-fluid">
-            </div>
-            <div class="col-md-3 d-none d-lg-block">
-              <img src="img/pexels-lukas-684387.jpg" style="width: 100%" class="img-fluid">
-            </div>
-          </div>
-      </div>
-  </div>
-    
-</div>
-
- <!-- 
-
-   END ABOUT SECTION
-
- -->
-
- <!-- 
-   6. Categories 
+   3. PARTNAIRES START
 
   -->
 
@@ -209,248 +120,24 @@
   <div class="container-area">
     <div class="text-center">
       <div class="title mt-4">
-      <h2>Entreprise Info</h2>
+      <h2>Partenaires</h2>
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-9">
-        <div class="tab-content" id="v-pills-tabContent">
-          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-            <div class="row">
-              <div class="col-sm-12 col-md-6 mb-4">
-                 <img src="img/pexels-valeria-boltneva-1484516.jpg" class="img-fluid img-thumbnail">
-              </div>
-              <div class="col-sm-6">
-                <div class="brand-title">
-                <h3><a href="category.html">Café Almahaba</a></h3>
-                </div>
-                <div class="desc">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt 
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt </p>
-                </div>
-              </div>
-
-              <div class="col-sm-12 col-md-6 mb-4">
-                 <img src="img/pexels-mateusz-dach-3660229.jpg" class="img-fluid img-thumbnail">
-              </div>
-              <div class="col-sm-12 col-md-6 mb-4">
-              
-                <div class="brand-title">
-                   <h3><a href="category.html">Café Pardis</a></h3>
-                </div>
-                <div class="desc">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt 
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt </p>
-                </div>
-              </div>
-               <!-- Pagination -->
-              <nav aria-label="Page navigation example" class="page">
-                <ul class="pagination justify-content-center">
-                  <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="v-pills-agriculture" role="tabpanel" aria-labelledby="v-pills-agriculture-tab">
-            <div class="row">
-              <div class="col-sm-12 col-md-6 mb-4">
-                 <img src="img/pexels-gary-barnes-6231852.jpg" class="img-fluid img-thumbnail">
-              </div>
-              <div class="col-sm-12 col-md-6 mb-4">
-                <div class="brand-title">
-                   <h3><a href="category.html">Maroc green</a></h3>
-                </div>
-                <div class="desc">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt 
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt </p>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-6 mb-4">
-                 <img src="img/pexels-karolina-grabowska-4207908.jpg" class="img-fluid img-thumbnail">
-              </div>
-             <div class="col-sm-12 col-md-6 mb-4">
-                  <div class="brand-title">
-                     <h3><a href="category.html">Nature Food</a></h3>
-                  </div>
-                  <div class="desc">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt 
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt </p>
-                  </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="v-pills-education" role="tabpanel" aria-labelledby="v-pills-education-tab">
-            <div class="row">
-              <div class="col-lg-6 mb-4">
-                 <img src="img/pexels-olia-danilevich-5088008.jpg" class="img-fluid img-thumbnail">
-              </div>
-              <div class="col-lg-6">
-                <div class="brand-title">
-                   <h3><a href="category.html">I9ra Class</a></h3>
-                </div>
-                <div class="desc">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt 
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt </p>
-                </div>
-              </div>
-              <div class="col-sm-6 mb-4">
-                 <img src="img/pexels-julia-m-cameron-4144923.jpg" class="img-fluid img-thumbnail">
-              </div>
-              <div class="col-sm-6">
-                  <div class="brand-title">
-                     <h3><a href="category.html">Educ Fath</a></h3>
-                  </div>
-                  <div class="desc">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt 
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt </p>
-                  </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="v-pills-travel" role="tabpanel" aria-labelledby="v-pills-travel-tab">
-            <div class="row">
-              <div class="col-sm-6 mb-4">
-              <img src="img/pexels-mihis-alex-21014.jpg" class="img-fluid img-thumbnail">
-              </div>
-              <div class="col-sm-6">
-                <div class="brand-title">
-                   <h3><a href="category.html">Travel comfort</a></h3>
-                </div>
-                <div class="desc">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt 
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt </p>
-                </div>
-              </div>
-              <div class="col-sm-6 mb-4">
-              <img src="img/pexels-leah-kelley-3935702.jpg" class="img-fluid img-thumbnail">
-              </div>
-              <div class="col-sm-6">
-                <div class="brand-title">
-                   <h3><a href="category.html">Travel Salam</a></h3>
-                </div>
-                <div class="desc">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt 
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="v-pills-sport" role="tabpanel" aria-labelledby="v-pills-sport-tab">
-            <div class="row">
-              <div class="col-sm-6 mb-4">
-                 <img src="img/machines-91849_1280.jpg" class="img-fluid img-thumbnail">
-              </div>
-              <div class="col-sm-6">
-                <div class="brand-title">
-                   <h3><a href="category.html">Gym Clubic</a></h3>
-                </div>
-                <div class="desc">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt 
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt </p>
-                </div>
-              </div>
-              <div class="col-sm-6 mb-4">
-                 <img src="img/pexels-pixabay-274422.jpg" class="img-fluid img-thumbnail">
-              </div>
-              <div class="col-sm-6">
-                <div class="brand-title">
-                  <h3><a href="category.html">Football Clubic</a></h3>
-                </div>
-                <div class="desc">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt 
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="v-pills-artisan" role="tabpanel" aria-labelledby="v-pills-artisan-tab">
-            <div class="row">
-              <div class="col-sm-6 mb-4">
-                 <img src="img/pexels-suzy-hazelwood-1266139.jpg" class="img-fluid img-thumbnail">
-              </div>
-              <div class="col-sm-6">
-                <div class="brand-title">
-                   <h3><a href="category.html">Tradition artisan</a></h3>
-                </div>
-                <div class="desc">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt 
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt </p>
-                </div>
-              </div>
-              <div class="col-sm-6 mb-4">
-                 <img src="img/pexels-skylar-kang-6044460.jpg" class="img-fluid img-thumbnail">
-              </div>
-              <div class="col-sm-6">
-                <div class="brand-title">
-                  <h3><a href="category.html">Artisan OldNew</a></h3>
-                </div>
-                <div class="desc">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt 
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="col-lg-3">
-        <form action="{{ route('search') }}">
-           <div class="input-group mb-4">
-            <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Search By City">
-            <div class="input-group-prepend">
-            <div class="input-group-text"><i class="fa fa-search"></i></div>
-            </div>
-          </div>
-        </form>
+        
         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <ul class="list-group">
-            <li class="list-group-item">
+            <li class="list-group-item" id="widget-title">
                <h5>Categories</h5>
             </li>
             <li class="list-group-item">
-              <a id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Café Restaurant
+              <a id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Café
                 <span class="badge badge-primary badge-pill">200</span></a>
             </li>
+           
             <li class="list-group-item">
-              <a id="v-pills-agriculture-tab" data-toggle="pill" href="#v-pills-agriculture" role="tab" aria-controls="v-pills-agriculture" aria-selected="false">Agriculture
-              <span class="badge badge-primary badge-pill">14</span></a>
-            </li>
-            <li class="list-group-item">
-              <a id="v-pills-education-tab" data-toggle="pill" href="#v-pills-education" role="tab" aria-controls="v-pills-education" aria-selected="false">Education
-                <span class="badge badge-primary badge-pill">144</span></a>
-            </li>
-            <li class="list-group-item">
-              <a id="v-pills-travel-tab" data-toggle="pill" href="#v-pills-travel" role="tab" aria-controls="v-pills-travel" aria-selected="false">Travel
-                <span class="badge badge-primary badge-pill">1000</span></a>
-            </li>
-            <li class="list-group-item">
-              <a id="v-pills-artisan-tab" data-toggle="pill" href="#v-pills-artisan" role="tab" aria-controls="v-pills-artisan" aria-selected="false">Artisanal
+              <a id="v-pills-artisan-tab" data-toggle="pill" href="#v-pills-artisan" role="tab" aria-controls="v-pills-artisan" aria-selected="false">Restaurant
                 <span class="badge badge-primary badge-pill">50</span></a>
             </li>
             <li class="list-group-item">
@@ -460,18 +147,70 @@
           </ul>
         </div>
       </div>
-
+      <div class="col-sm-9">
+        <div class="tab-content" id="v-pills-tabContent">
+          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card h-100">
+                  <img class="card-img-top" src="https://hmiza-card.com/storage/partners/zCXHN7IVu1Oam45LDUidHgmasDIaOxjLtJpxhXNS.jpg" alt="Card image cap">
+                  <div class="card-body">
+                      <h5 class="card-title">a</h5>
+                      <p class="card-text">B</p>
+                  </div>
+                  <div class="card-footer">
+                      <a href="category.html" class="btn btn-block btn-flat btn-outline-secondary">Voir plus</a>
+                  </div>
+              </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card h-100">
+                  <img class="card-img-top" src="https://hmiza-card.com/storage/partners/zCXHN7IVu1Oam45LDUidHgmasDIaOxjLtJpxhXNS.jpg" alt="Card image cap">
+                  <div class="card-body">
+                      <h5 class="card-title">a</h5>
+                      <p class="card-text">B</p>
+                  </div>
+                  <div class="card-footer">
+                      <a href="category.html" class="btn btn-block btn-flat btn-outline-secondary">Voir plus</a>
+                  </div>
+              </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card h-100">
+                  <img class="card-img-top" src="https://hmiza-card.com/storage/partners/zCXHN7IVu1Oam45LDUidHgmasDIaOxjLtJpxhXNS.jpg" alt="Card image cap">
+                  <div class="card-body">
+                      <h5 class="card-title">a</h5>
+                      <p class="card-text">B</p>
+                  </div>
+                  <div class="card-footer">
+                      <a href="category.html" class="btn btn-block btn-flat btn-outline-secondary">Voir plus</a>
+                  </div>
+              </div>
+              </div>
+            </div>
+            <div class="text-center" id="view-all"
+                <div class="form-group">
+              <button class="btn-ghost">
+                Voir tout partenaires
+              </button>
+            </div>
+          </div>
+          
+          <div class="tab-pane fade" id="v-pills-sport" role="tabpanel" aria-labelledby="v-pills-sport-tab">
+             <h4>No Partnaires</h4>
+          </div>
+          <div class="tab-pane fade" id="v-pills-artisan" role="tabpanel" aria-labelledby="v-pills-artisan-tab">
+             <h4>No Partnaires</h4>
+          </div>
+        </div>
+      </div>
   </div>
-
   </div>
 </section>
 
- 
-
-
   <!-- 
 
-   5. INFO SECTION START
+   4. INFO SECTION START
 
   -->
 
@@ -496,352 +235,61 @@
 
 -->
 
-<!-- 
-
-   6. TAKE ACTION
-
--->
-
-<section id="home-heading" class="p-5">
-    <div class="dark-overlay">
-      <div class="row">
-        <div class="col">
-          <div class="container pt-5">
-            <h1>Are You Ready To Get Started?</h1>
-            <p class="d-none d-md-block">Créez votre profil de Membre Hmiza et accédez au meilleur des services, de l'inspiration et de la communauté Hmiza en avant-première.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 
-
-   END TAKE ACTION 
-
-  -->
-
-  <!-- 
-
-   7. HOW TO USE SECTION START
-
--->
-
-  <!-- SECTION STEPS -->
-    <section class="sections-steps pb-4">
-      <div class="container">
-        <div class="text-center">
-          <div class="title pt-5 mb-0">
-            <h2>How it works &mdash; Simple as 1, 2, 3</h2>
-           </div>
-        </div>
-          <div class="row">
-              <div class="col-lg-4 col-md-6 col-sm-6">
-                  <img src="img/index-iPhone 7.png" class="img-fluid">
-              </div>
-              <div class="col-lg-8 col-md-6 col-sm-6">
-                  <div class="works-step align-items-center">
-                        <div class="d-flex flex-row align-items-center">
-                    <div class="align-self-start pr-4">
-                      1
-                    </div>
-                    <div class="align-self-end">
-                      <p>Spot global trends and opportunities with company data that covers 99% of the world’s market cap.</p>
-                    </div>
-                   </div>
-                
-                <div class="d-flex flex-row align-items-center">
-                    <div class="align-self-start pr-4">
-                      2
-                    </div>
-                    <div class="align-self-end">
-                      <p>You can research past events and anticipate future opportunities by accessing the oldest historical data sets and the largest coverage of companies.</p>
-                    </div>
-                   </div>
-                <div class="d-flex flex-row align-items-center">
-                    <div class="align-self-start pr-4">
-                      3
-                    </div>
-                    <div class="align-self-end">
-                      <p>Take action now </p>
-                    </div>
-                   </div>
-                   </div>
-                  <a href="#" class="btn-app"><img src="img/download-app.svg" alt="App Store Button"></a>
-                  <a href="#" class="btn-app"><img src="img/download-app-android.png" alt="Play Store Button"></a>
-              </div>
-          </div>
-        </div>
-    </section>
-
-  <!-- 
-
-   END HOW TO USE SECTION 
-
-  -->
-
- <!-- 
-
- 8. TESTEMONIAL START
-
- -->
-
-  <section id="testmonial" class="my-5 text-center">
-    <div class="container">
-      <div class="text-center">
-        <div class="title mt-4">
-          <h2>Testmonials</h2>
-          <p class="customer-text" class="text-muted">Our dear customers said about us</p>
-        </div>
-    </div>
-      <div class="row">
-        <div class="col-lg-4 col-sm-12">
-          <div class="card">
-            <div class="card-body">
-              <i class="fa fa-quote-left"></i>
-              <img src="img/person1.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
-
-              <h3 class="text-muted">Susan Williams</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae molestiae alias expedita quae esse ut.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-12">
-          <div class="card">
-            <div class="card-body">
-              <i class="fa fa-quote-left"></i>
-              <img src="img/person2.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
-              <h3 class="text-muted">Grace Smith</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae molestiae alias expedita quae esse ut.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-12">
-          <div class="card">
-            <div class="card-body">
-              <i class="fa fa-quote-left"></i>
-              <img src="img/person3.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
-              <h3 class="text-muted">John Doe</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae molestiae alias expedita quae esse ut.</p>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
- <!-- 
-
- END TESTEMONIAL
-
--->
-
- <!-- 
-
- 9. CONTACT SECTION START
-
--->
-<section id="contact" class="bg-light pt-5">
-    <div class="container-area">
-       <div class="text-center">
-          <div class="title mt-4">
-            <h2>Contact Us</h2>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-lg-8">
-             <!-- start form -->
-            <form method="post">
-              <div class="form-group">
-                <div class="input-group input-group-lg">
-                  <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                  <input type="text" name="full_name" class="form-control" placeholder="Name">
-                </div>
-              </div>
-
-              <div class="form-group">
-                <div class="input-group input-group-lg">
-                  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                  <input type="email" name="email" class="form-control" placeholder="Email">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="d-flex flex-row align-items-center">
-                  <div class="align-items-start pr-3">
-                    <span>Newsletter !</span>
-                  </div>
-                  <div class="align-items-end">
-                    <input name="check_in" type="checkbox">
-                  <span class="checkmark">yes please</span>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="input-group input-group-lg">
-                  <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
-                  <textarea class="form-control" placeholder="Message" rows="5"></textarea>
-                </div>
-              </div>
-              <input type="submit" value="Submit" class="btn btn-ghost btn-block btn-lg">
-            </form>
-          </div>
-          <div class="col-lg-3 align-self-center">
-            
-            <div class="address">
-          <!-- Contacts Starts -->
-                  <h6 class="font-weight-700 uppercase">Phone</h6>
-                  <span class="font-weight-400 second-font"><i class="fa fa-phone"></i> 06 99 46 31 49</span>
-          <h6 class="font-weight-700 uppercase">Email</h6>
-          <span class="font-weight-400 second-font"><i class="fa fa-envelope"></i> Hmiza.Card@gmail.com</span>
-        
-          <h6 class="font-weight-700 uppercase">Address</h6>
-          <span class="font-weight-400 second-font"><i class="fa fa-home"></i>  Morocco, Tétouan</span><br>
-          <!-- Contacts Ends -->
-          <!-- Social Media Profiles Starts -->
-                  <h6 class="font-weight-700 uppercase">Social Profiles</h6>
-                  <div class="social">
-                      <ul class="list-inline social social-intro center-align p-none">
-                          <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                          <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                          <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                          <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                      </ul>
-                  </div>
-          <!-- Social Media Profiles Ends -->
-              </div>      
-          </div>
-        </div>
-   
-    </div>
-  </section>
- <!-- 
-
-  END CONTACT SECTION
-
--->
-
- <!-- 
-
- 10. GOOGLE MAPS START
-
--->
-<div class="overlay">  
-  <iframe src="https://maps.google.com/maps?q=t%C3%A9touan&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;opacity: 0.5"></iframe>
-</div>
 
 
  <!-- 
 
-  END GOOGLE MAPS START
-
--->
-
- <!-- 
-
-  11. FOOTER SECTION START
+  5. FOOTER SECTION START
 
 -->
 
 <footer id="main-footer" class="py-4">
-  <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <ul class="footer-adress">
-            <li>
-            <h4>Company</h4>
-            </li>
-            <li>
-            <a href="about.html">About Us</a>
-            </li>
-            <li>
-            <a href="#contact">Contact Us</a>
-            </li>
-            <li>
-            <a href="#">Privacy Policy</a>
-            </li>
-            <li>
-            <a href="#">Terms & Conditions</a>
-            </li>
-            <li>
-            <a href="#">Support Center</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-4">
-          <ul class="footer-adress">
-            <li>
-            <h4>Links</h4>
-            </li>
-            <li>
-            <a href="#">Link One</a>
-            </li>
-            <li>
-            <a href="#">Link Tow</a>
-            </li>
-            <li>
-            <a href="#">Link Three</a>
-            </li>
-            <li>
-            <a href="#">Link Four</a>
-            </li>
-            <li>
-            <a href="#">Link Five</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-4">
-          <ul>
-            <li>
-            <h4>Address</h4>
-            </li>
-            <li>
-            <span class="font-weight-400 second-font"><i class="fa fa-phone"></i> 06 99 46 31 49</span>
-            </li>
-            <li>
-            <span class="font-weight-400 second-font"><i class="fa fa-envelope"></i> Hmiza.Card@gmail.com</span>
-            </li>
-            <li class="social-media">
-            <a href="#" id="facebook">
-            <i class="fa fa-facebook"></i>
-            </a>
-            <a href="#" id="instagram">
-            <i class="fa fa-instagram"></i>
-            </a>
-            <a href="#" id="twitter">
-            <i class="fa fa-twitter"></i>
-            </a>
-            <a href="#" id="whatsapp">
-            <i class="fa fa-whatsapp"></i>
-            </a>
-            <a href="#" id="pinterest">
-            <i class="fa fa-pinterest"></i>
-            </a>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="col text-center">
+                    <img alt="Hmiza Card Logo" src="https://hmiza-card.com/img/logo hmiza-07.png" style="width: 90px;" class="">
+                    <p class="pt-2 currentYear"></p>
+                </div>
+            </div>
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <ul>
+                    <li>
+                        <h4>Address</h4>
+                    </li>
+                    <li>
+                        <span class="font-weight-400 second-font"><i class="fa fa-phone"></i> 0697430890 / 0615640483</span>
+                    </li>
+                    <li>
+                        <span class="font-weight-400 second-font"><i
+                                class="fa fa-envelope"></i> elbahjamohamed0@gmail.com</span>
+                    </li>
+                    <li class="social-media">
+                        <a href="https://www.facebook.com/elbahja0" id="facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#" id="instagram">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="https://www.twitter.com/elbahja0" id="twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="https://wa.me/212697430890" id="whatsapp">
+                            <i class="fa fa-whatsapp"></i>
+                        </a>
 
-            <a href="#" id="youtube">
-            <i class="fa fa-youtube"></i>
-            </a>
-            <a href="#" id="google-plus">
-            <i class="fa fa-google-plus"></i>
-            </a>
-            </li>
-          </ul>
+                        <a href="https://www.youtube.com" id="youtube">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/elbahja0" id="linkedin">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <ul class="footer-nav text-center">
-      <li><a href="about.html">About us</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Press</a></li>
-      <li><a href="#">iOs App</a></li>
-      <li><a href="#">Android App</a></li>
-      </ul>
-      <div class="row">
-        <div class="col text-center">
-          <img src="img/logo hmiza-07.png" style="width: 90px;" class="">
-          <p class="pt-2">Copyright © 2021</p>
-        </div>
-      </div>
-  </div>
+    </div>
 </footer>
 
  <!-- 
@@ -850,17 +298,16 @@
 
 -->
 
-
  <!-- 
 
-  12. SCROLL TO TOP START
+  7. SCROLL TO TOP START
 
 -->  
-<!-- 
+
 <div id="scroll-top">
    <div id="scroll" style="display: block;"></div>
 </div>
- -->
+
  <!-- 
 
   END SCROLL TO TOP
@@ -869,16 +316,13 @@
 
 <!-- 
 
- 13. SCRIPTS START
+ 8. SCRIPTS START
 
 -->
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-
   <script src="js/custom.js"></script>
-
-
 
 </body>
 </html>
